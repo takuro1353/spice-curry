@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コンタクト</title>
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@4.0.1/destyle.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="aside">
+        <div class="aside__img">
+            <a href="index.html">
+                <img src="img/スパイスカレー食堂.png" alt="">
+            </a>
+        </div>
+        <nav class="aside__nav">
+            <ul class="aside__nav--info">
+                <p>私たちについて</p>
+                <li>
+                    <a href="concept.html">コンセプト</a>
+                </li>
+                <li>
+                    <a href="">会社概要</a>
+                </li>
+                <li>
+                    <a href="quality.html">こだわり</a>
+                </li>
+            </ul>
+
+            <ul class="aside__nav--menu">
+                <p>メニュー</p>
+                <li>
+                    <a href="menu.html">期間限定メニュー</a>
+                </li>
+                <li>
+                    <a href="menu.html">定番メニュー</a>
+                </li>
+                <li>
+                    <a href="menu.html">セットメニュー</a>
+                </li>
+            </ul>
+
+            <ul class="aside__nav--news">
+                <li><a href="#news">お知らせ</a></li>
+            </ul>
+
+            <ul class="aside__nav--instagram">
+                <li><a href="#instagram">INSTAGRAM</a></li>
+            </ul>
+
+            <ul class="aside__nav--contact">
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="section__title">
+            <p class="section__title--jp">お問い合わせ</p>
+            <p class="section__title--eg">Contact</p>
+        </div>
+
+        <section class="hero"> 
+                <div class="hero__visual">
+                    <img src="img/hero-img.jpg" alt="">
+                </div>
+        </section>
+
+        <div class="contact">
+            <div class="contact__text">
+                <div class="contact__text--left">
+                    <p>
+                        スパイス食堂にご興味を持って頂き、誠にありがとうございます。<br>
+                        下記のフォームよりお問い合わせください。
+                    </p>
+                </div>
+                <div class="contact__text--right">
+                    <p class="text--01">
+                        お電話も受け付けています。
+                    </p>
+                    <p class="text--02">
+                        0000-000-0000
+                    </p>
+                    <p class="text--03">
+                        営業時間 9:00-18:00
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact__number">
+                <div class="contact__number--01">
+                    <p class="n01">01</p>
+                    <p class="text">入力</p>
+                </div>
+                <div class="contact__number--02">
+                    <p class="n02">02</p>
+                    <p class="text">送信完了</p>
+                </div>
+            </div>
+
+            <div class="contact__inner">
+                <form action="#" method="post" class="contact__form">
+                    <div class="contact__item">
+                        <label for="name">お名前<span>必須</span></label>
+                        <input type="text" id="name" name="name" placeholder="例）スパイス 太郎" required>
+                    </div>
+
+                    <div class="contact__item">
+                        <label for="email">メールアドレス<span>必須</span></label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                    </div>
+
+                    <div class="contact__item">
+                        <label for="type">お問い合わせ種類</label>
+                        <select id="type" name="type" onchange="toggleReservationFields()">
+                            <option value="">選択してください</option>
+                            <option value="menu">メニューについて</option>
+                            <option value="reserve">ご予約について</option> <!-- これを選択した時 -->
+                            <option value="other">その他</option>
+                        </select>
+                    </div>
+
+                    <div id="reservation-fields" style="display: none;">
+                        <div class="contact__item">
+                            <label for="date">ご希望日<span>必須</span></label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="contact__item">
+                            <label for="people">人数<span>必須</span></label>
+                            <input type="number" id="people" name="people" min="1" placeholder="1">
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <label for="message">メッセージ内容</label>
+                        <textarea id="message" name="message" rows="6" placeholder="ご自由にご記入ください"></textarea>
+                    </div>
+
+                    <div class="contact__btn">
+                        <button type="submit">
+                            <a href="contact2.html">
+                                <span>Send Message</span>
+                            </a>
+                            <img src="img/矢印アイコン　右4.png" alt="">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="footer__company">
+                <img src="img/logo 文字.png" alt="">
+                
+                <ul class="footer__company--detail">
+                    <li class="address">
+                        <span>〒000-0000</span> 東京都サンプル区テスト町0-0-0 サンプルビル
+                    </li>
+                    <li class="time">
+                        <span>営業時間</span> 9:00-18:00
+                    </li>
+                    <li class="holiday">
+                        <span>定休日</span> 第1,第3月曜日
+                    </li>
+                </ul>
+            </div>
+
+        <nav class="footer__nav">
+            <ul class="footer__nav--info">
+                <p>私たちについて</p>
+                <li>
+                    <a href="concept.html">コンセプト</a>
+                </li>
+                <li>
+                    <a href="">会社概要</a>
+                </li>
+                <li>
+                    <a href="quality.html">こだわり</a>
+                </li>
+            </ul>
+
+            <ul class="footer__nav--menu">
+                <p>メニュー</p>
+                <li>
+                    <a href="#season">期間限定メニュー</a>
+                </li>
+                <li >
+                    <a href="#ordinary">定番メニュー</a>
+                </li>
+                <li>
+                    <a href="#set">セットメニュー</a>
+                </li>
+            </ul>
+
+            <ul class="footer__nav--news">
+                <li><a href="#news">お知らせ</a></li>
+            </ul>
+
+            <ul class="footer__nav--instagram">
+                <li><a href="#instagram">INSTAGRAM</a></li>
+            </ul>
+
+            <ul class="footer__nav--contact">
+                <li><a href="#contact"><span></span>お問い合わせ</a></li>
+            </ul>
+            
+        </nav>
+        </footer>
+    </main>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
