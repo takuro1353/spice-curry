@@ -1564,7 +1564,7 @@ body {
 }
 .aside__nav--instagram li {
   list-style: none;
-  background-image: url("../img/インスタグラムのシンプルなロゴのアイコン1.png");
+  background-image: url("img/インスタグラムのシンプルなロゴのアイコン1.png");
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -1582,7 +1582,7 @@ body {
 }
 .aside__nav--contact li {
   list-style: none;
-  background-image: url("../img/mail-icon.png");
+  background-image: url("img/mail-icon.png");
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -1974,7 +1974,7 @@ body {
   }
 }
 .main .concept {
-  background-image: url("../img/herocurry.png");
+  background-image: url("img/herocurry.png");
   background-size: 650px;
   background-repeat: no-repeat;
   background-position: 100% 0%;
@@ -2187,7 +2187,7 @@ body {
   margin-top: 20px;
 }
 .main .instagram {
-  background-image: url("../img/ホールスパイス2.png");
+  background-image: url("img/ホールスパイス2.png");
   background-size: 650px;
   background-repeat: no-repeat;
   background-position: 120% -50%;
@@ -2215,7 +2215,7 @@ body {
   height: 60px;
   padding: 4px 24px;
   border-radius: 5px;
-  background-image: url("../img/インスタグラムのシンプルなロゴのアイコン1.png");
+  background-image: url("img/インスタグラムのシンプルなロゴのアイコン1.png");
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: 10% 55%;
@@ -2266,7 +2266,7 @@ body {
   align-items: center;
   padding: 12px 24px;
   border-radius: 5px;
-  background-image: url("../img/mail-icon.png");
+  background-image: url("img/mail-icon.png");
   background-size: 36px;
   background-repeat: no-repeat;
   background-position: 5% 50%;
@@ -2360,7 +2360,7 @@ body {
   margin-bottom: 24px;
 }
 .main .footer__nav--instagram li {
-  background-image: url("../img/インスタグラムのシンプルなロゴのアイコン1.png");
+  background-image: url("img/インスタグラムのシンプルなロゴのアイコン1.png");
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -2374,7 +2374,7 @@ body {
   margin-bottom: 24px;
 }
 .main .footer__nav--contact li {
-  background-image: url("../img/mail-icon.png");
+  background-image: url("img/mail-icon.png");
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: 0% 50%;
