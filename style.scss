@@ -249,13 +249,14 @@ body {
             justify-content: space-around;
             align-items: center;
             position: relative;
-            padding: 0px 16px;
-            height: 100px;
-            overflow-y: hidden;
+            padding: 36px 16px;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            height: 80px;
+            overflow: hidden;
 
             .slideshow {
 
-                // position: relative;
                 img {
                     aspect-ratio: 1/1;
                     width: 150px;
@@ -779,8 +780,8 @@ body {
                     font-size: 8em;
                     position: absolute;
                     opacity: 0.5;
-                    top: -200px;
-                    left: -80px;
+                    top: -150px;
+                    left: -40px;
                     z-index: -100;
                 }
             }
@@ -789,7 +790,6 @@ body {
                 line-height: 1.7em;
                 margin-bottom: 56px;
 
-                p {}
             }
 
             &--btn {
@@ -801,8 +801,6 @@ body {
                     border: 1px solid black;
                     border-radius: 5px;
                     padding: 16px 56px 16px 40px;
-
-                    a {}
 
                     img {
                         width: 20px;
@@ -827,7 +825,7 @@ body {
         .menu--right {
             .menu__content--title {
                 p {
-                    left: 470px;
+                    left: 420px;
                 }
             }
         }

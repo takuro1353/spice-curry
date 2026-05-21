@@ -1625,9 +1625,11 @@ body {
   justify-content: space-around;
   align-items: center;
   position: relative;
-  padding: 0px 16px;
-  height: 100px;
-  overflow-y: hidden;
+  padding: 36px 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  height: 80px;
+  overflow: hidden;
 }
 .main .top .container .slideshow img {
   aspect-ratio: 1/1;
@@ -2020,8 +2022,8 @@ body {
   font-size: 8em;
   position: absolute;
   opacity: 0.5;
-  top: -200px;
-  left: -80px;
+  top: -150px;
+  left: -40px;
   z-index: -100;
 }
 .main .menu__content--text {
@@ -2051,7 +2053,7 @@ body {
   margin-right: 48px;
 }
 .main .menu__content:nth-child(odd) .menu--right .menu__content--title p {
-  left: 470px;
+  left: 420px;
 }
 .main .news ul {
   border-top: 1px solid black;
