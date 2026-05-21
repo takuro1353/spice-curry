@@ -124,7 +124,7 @@ body {
 }
 .aside__nav--instagram li {
   list-style: none;
-  background-image: url("../img/インスタグラムのシンプルなロゴのアイコン1.png");
+  background-image: url("img/インスタグラムのシンプルなロゴのアイコン1.png");
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -142,7 +142,7 @@ body {
 }
 .aside__nav--contact li {
   list-style: none;
-  background-image: url("../img/mail-icon.png");
+  background-image: url("img/mail-icon.png");
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -369,7 +369,7 @@ body {
   margin-bottom: 24px;
 }
 .main .footer__nav--instagram li {
-  background-image: url("../img/インスタグラムのシンプルなロゴのアイコン1.png");
+  background-image: url("img/インスタグラムのシンプルなロゴのアイコン1.png");
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -383,7 +383,7 @@ body {
   margin-bottom: 24px;
 }
 .main .footer__nav--contact li {
-  background-image: url("../img/mail-icon.png");
+  background-image: url("img/mail-icon.png");
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: 0% 50%;
