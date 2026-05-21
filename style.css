@@ -1,0 +1,2612 @@
+@charset "UTF-8";
+body {
+  font-size: 100%;
+  display: flex;
+}
+
+.aside {
+  width: 20%;
+}
+.aside__img a img {
+  width: 300px;
+  height: 200px;
+}
+.aside__nav {
+  margin-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.aside__nav--info {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.aside__nav--info p {
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.aside__nav--info p::before, .aside__nav--info p::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: black;
+}
+.aside__nav--info p::before {
+  top: 50%;
+  right: 5px;
+  transform: rotate(0deg);
+}
+.aside__nav--info p::after {
+  top: 50%;
+  right: 5px;
+  transform: rotate(90deg);
+}
+.aside__nav--info p.close::before {
+  transform: rotate(45deg);
+}
+.aside__nav--info p.close::after {
+  transform: rotate(-45deg);
+}
+.aside__nav--info li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+.aside__nav--info li a {
+  text-decoration: none;
+  font-size: 1.1em;
+}
+.aside__nav--menu {
+  border-bottom: 2px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.aside__nav--menu p {
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.aside__nav--menu p::before, .aside__nav--menu p::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: black;
+}
+.aside__nav--menu p::before {
+  top: 50%;
+  right: 5px;
+  transform: rotate(0deg);
+}
+.aside__nav--menu p::after {
+  top: 50%;
+  right: 5px;
+  transform: rotate(90deg);
+}
+.aside__nav--menu p.close::before {
+  transform: rotate(45deg);
+}
+.aside__nav--menu p.close::after {
+  transform: rotate(-45deg);
+}
+.aside__nav--menu li {
+  list-style: none;
+  margin-bottom: 16px;
+  display: none;
+}
+.aside__nav--menu li a {
+  text-decoration: none;
+  font-size: 1.1em;
+}
+.aside__nav--news {
+  border-bottom: 2px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.aside__nav--news li {
+  list-style: none;
+}
+.aside__nav--news li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+.aside__nav--instagram {
+  border-bottom: 2px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.aside__nav--instagram li {
+  list-style: none;
+  background-image: url("../img/インスタグラムのシンプルなロゴのアイコン1.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+.aside__nav--instagram li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-left: 30px;
+}
+.aside__nav--contact {
+  border-bottom: 2px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.aside__nav--contact li {
+  list-style: none;
+  background-image: url("../img/mail-icon.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+.aside__nav--contact li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-left: 30px;
+}
+
+.main {
+  flex: 1;
+  margin-top: 48px;
+  display: block;
+  margin: 0 auto;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.main .section__title--jp {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 48px;
+}
+.main .section__title--eg {
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 24px;
+  font-family: "Arizonia", cursive;
+}
+.main .menu__hero img {
+  max-width: 100%;
+  aspect-ratio: 2.5/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .menu__top--text {
+  width: 500px;
+  margin: 56px 16px;
+}
+.main .menu__top--text p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+.main .menu__select {
+  display: flex;
+  gap: 36px;
+  margin-left: 16px;
+}
+.main .menu__select--btn {
+  display: flex;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 16px 24px 36px 24px;
+}
+.main .menu__select--btn a {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.main .menu__select--btn img {
+  width: 20px;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+}
+.main .menu__article--img {
+  margin-top: 196px;
+  margin-bottom: 48px;
+}
+.main .menu__article--img img {
+  width: 800px;
+  border-radius: 10px;
+  aspect-ratio: 2.2/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .menu__article h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+.main .menu__article--note {
+  display: flex;
+  margin-bottom: 56px;
+  gap: 36px;
+  border-top: 1px solid black;
+  padding-top: 16px;
+}
+.main .menu__article--note--left {
+  width: 35%;
+}
+.main .menu__article--note--left p {
+  font-size: 1.3em;
+  line-height: 1.6em;
+  font-weight: 500;
+}
+.main .menu__article--note--right {
+  width: 35%;
+}
+.main .menu__article--note--right P {
+  line-height: 1.6em;
+}
+.main .menu__article--example {
+  display: flex;
+  gap: 56px;
+}
+.main .menu__article--example--01 h3 {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.main .menu__article--example--01 img {
+  width: 340px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.main .menu__article--example--01 p {
+  width: 320px;
+  font-size: 0.95em;
+  margin-top: 16px;
+  line-height: 1.6em;
+}
+.main .menu__article--example--02 h3 {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.main .menu__article--example--02 img {
+  width: 340px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.main .menu__article--example--02 p {
+  width: 320px;
+  font-size: 0.95em;
+  margin-top: 16px;
+  line-height: 1.6em;
+}
+.main .footer {
+  display: flex;
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+.main .footer__company img {
+  width: 300px;
+  aspect-ratio: 1/1;
+}
+.main .footer__company--detail .address span {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-right: 4px;
+}
+.main .footer__company--detail .address {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+.main .footer__company--detail .time span {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-right: 4px;
+}
+.main .footer__company--detail .time {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+.main .footer__company--detail .holiday span {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-right: 4px;
+}
+.main .footer__company--detail .holiday {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+.main .footer__nav {
+  margin-top: 50px;
+  margin-left: 150px;
+}
+.main .footer__nav--info {
+  margin-bottom: 24px;
+}
+.main .footer__nav--info p {
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+.main .footer__nav--info li {
+  margin-bottom: 4px;
+}
+.main .footer__nav--info li a {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.main .footer__nav--menu {
+  margin-bottom: 24px;
+}
+.main .footer__nav--menu p {
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+.main .footer__nav--menu li {
+  margin-bottom: 4px;
+}
+.main .footer__nav--menu li a {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.main .footer__nav--news {
+  margin-bottom: 24px;
+}
+.main .footer__nav--news li a {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.main .footer__nav--instagram {
+  margin-bottom: 24px;
+}
+.main .footer__nav--instagram li {
+  background-image: url("../img/インスタグラムのシンプルなロゴのアイコン1.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+.main .footer__nav--instagram li a {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-left: 24px;
+}
+.main .footer__nav--contact {
+  margin-bottom: 24px;
+}
+.main .footer__nav--contact li {
+  background-image: url("../img/mail-icon.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+.main .footer__nav--contact li a {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-left: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    margin: 0 auto;
+  }
+  .hamburger {
+    display: block;
+    width: 72px;
+    aspect-ratio: 1;
+    border: none;
+    z-index: 10000;
+    position: absolute;
+    right: 10px;
+    margin: 8px;
+    padding: 8px;
+    background-color: whitesmoke;
+    opacity: 0.7;
+    border-radius: 10px;
+  }
+  .hamburger:hover {
+    background-color: rgb(190, 190, 190);
+  }
+  .hamburger span {
+    display: block;
+    width: 70%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #000;
+    position: absolute;
+    top: 40%;
+    transition: all 0.3s;
+    transform-origin: center;
+  }
+  .hamburger span:nth-child(1) {
+    transform: translateY(-13px);
+  }
+  .hamburger span:nth-child(2) {
+    transform: translateY(0px);
+  }
+  .hamburger span:nth-child(3) {
+    transform: translateY(13px);
+  }
+  .hamburger__text {
+    position: absolute;
+    top: 48px;
+    left: 12px;
+    font-weight: 500;
+  }
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  .aside {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+    transition: 0.3s;
+    background-color: #fff;
+    opacity: 0.7;
+  }
+  .aside.active {
+    right: 0;
+    z-index: 9999;
+    margin: 0 auto;
+  }
+  .aside.active .aside__img {
+    display: none;
+  }
+  .main {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .main .section__title {
+    text-align: center;
+  }
+  .main .top .hero__visual img {
+    max-width: 100%;
+  }
+  .main .top .hero__img img {
+    width: 500px;
+    left: 8%;
+  }
+  .main .menu__top--text {
+    display: flex;
+    margin: 24px auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+  }
+  .main .menu__select {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+  }
+  .main .menu__article {
+    margin-bottom: 108px;
+  }
+  .main .menu__article--img {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .main .menu__article--img img {
+    max-width: 100%;
+  }
+  .main .menu__article h3 {
+    margin-top: 16px;
+  }
+  .main .menu__article--note {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  .main .menu__article--note--left {
+    margin-right: -30px;
+  }
+  .main .menu__article--note--right {
+    margin-left: -30px;
+  }
+  .main .menu__article--example {
+    margin-top: 24px;
+    max-width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+  .main .menu__article--example--01 .main .menu__article--example--02 {
+    max-width: 49%;
+  }
+  .main .menu__article--example--01 .main .menu__article--example--02 img {
+    aspect-ratio: 1;
+    max-width: 40%;
+  }
+  .main .footer {
+    flex-direction: column;
+  }
+  .main .footer__company {
+    text-align: center;
+  }
+  .main .footer__nav ul {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body {
+  font-size: 100%;
+  display: flex;
+}
+
+.aside {
+  width: 20%;
+}
+.aside__img a img {
+  width: 300px;
+  height: 200px;
+}
+.aside__nav {
+  margin-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.aside__nav--info {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.aside__nav--info p {
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.aside__nav--info p::before, .aside__nav--info p::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: black;
+}
+.aside__nav--info p::before {
+  top: 50%;
+  right: 5px;
+  transform: rotate(0deg);
+}
+.aside__nav--info p::after {
+  top: 50%;
+  right: 5px;
+  transform: rotate(90deg);
+}
+.aside__nav--info p.close::before {
+  transform: rotate(45deg);
+}
+.aside__nav--info p.close::after {
+  transform: rotate(-45deg);
+}
+.aside__nav--info li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+.aside__nav--info li a {
+  text-decoration: none;
+  font-size: 1.1em;
+}
+.aside__nav--menu {
+  border-bottom: 2px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.aside__nav--menu p {
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.aside__nav--menu p::before, .aside__nav--menu p::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: black;
+}
+.aside__nav--menu p::before {
+  top: 50%;
+  right: 5px;
+  transform: rotate(0deg);
+}
+.aside__nav--menu p::after {
+  top: 50%;
+  right: 5px;
+  transform: rotate(90deg);
+}
+.aside__nav--menu p.close::before {
+  transform: rotate(45deg);
+}
+.aside__nav--menu p.close::after {
+  transform: rotate(-45deg);
+}
+.aside__nav--menu li {
+  list-style: none;
+  margin-bottom: 16px;
+  display: none;
+}
+.aside__nav--menu li a {
+  text-decoration: none;
+  font-size: 1.1em;
+}
+.aside__nav--news {
+  border-bottom: 2px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.aside__nav--news li {
+  list-style: none;
+}
+.aside__nav--news li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+.aside__nav--instagram {
+  border-bottom: 2px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.aside__nav--instagram li {
+  list-style: none;
+  background-image: url("../img/インスタグラムのシンプルなロゴのアイコン1.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+.aside__nav--instagram li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-left: 30px;
+}
+.aside__nav--contact {
+  border-bottom: 2px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.aside__nav--contact li {
+  list-style: none;
+  background-image: url("../img/mail-icon.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+.aside__nav--contact li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-left: 30px;
+}
+
+.main {
+  flex: 1;
+  margin-top: 48px;
+  display: block;
+  margin: 0 auto;
+}
+.main .section__title--jp {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 48px;
+}
+.main .section__title--eg {
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 24px;
+  font-family: "Arizonia", cursive;
+}
+.main .ingredient {
+  margin-top: 96px;
+}
+.main .ingredient__hero img {
+  max-width: 100%;
+  aspect-ratio: 2.5/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .ingredient__hero {
+  background-color: rgb(247, 246, 245);
+  margin-bottom: -8px;
+}
+.main .ingredient .bg-gray {
+  background-color: rgb(247, 246, 245);
+}
+.main .ingredient__text {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.main .ingredient__text--eg {
+  margin-top: 8px;
+  padding-top: 16px;
+}
+.main .ingredient__text--jp {
+  margin-top: 8px;
+}
+.main .ingredient__title {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 24px;
+}
+.main .ingredient__title h2 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.main .ingredient__title p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+.main .ingredient__onion {
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 16px;
+}
+.main .ingredient__onion--name--jp {
+  font-size: 2em;
+  font-weight: 500;
+}
+.main .ingredient__onion .inner {
+  display: flex;
+}
+.main .ingredient__onion--text {
+  line-height: 1.7em;
+  margin-top: 8px;
+}
+.main .ingredient__onion--text--bold {
+  font-weight: bold;
+  margin-top: 8px;
+}
+.main .ingredient__onion--text--small {
+  padding-right: 40px;
+}
+.main .ingredient__onion--text--img {
+  margin-top: -50px;
+  margin-right: 40px;
+  margin-left: 0;
+  padding-left: 0;
+  width: 350px;
+}
+.main .ingredient__onion--text--area {
+  padding: 16px;
+  line-height: 1.7em;
+  margin-top: -50px;
+}
+.main .ingredient__onion--text--area .main {
+  background-image: url("img/マップピンのアイコン素材3.png");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: -3px 2px;
+}
+.main .ingredient__onion--text--area .main p {
+  margin-left: 24px;
+}
+.main .ingredient__onion--text--area .text {
+  margin-bottom: 8px;
+}
+.main .ingredient__onion--text--area .text__large {
+  font-size: 1.1em;
+  line-height: 1.9em;
+}
+.main .ingredient__onion--text--area .text__small {
+  font-size: 0.9em;
+}
+.main .ingredient__onion--text--area .character {
+  margin-top: 8px;
+  border-top: 1px solid black;
+}
+.main .ingredient__onion--text--area .character__text {
+  font-size: 1.1em;
+  margin-top: 8px;
+}
+.main .ingredient__onion--text--area .character__note {
+  font-size: 0.9em;
+}
+.main .ingredient__onion--text--area .character__note--detail {
+  background-image: url("../img/チェックボックスのフリーアイコン.png");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 2px 6px;
+}
+.main .ingredient__onion--text--area .character__note--detail p {
+  margin-left: 30px;
+}
+.main .ingredient__tomato {
+  border-top: 1px solid black;
+  padding-top: 8px;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 16px;
+  margin-bottom: 108px;
+}
+.main .ingredient__tomato--name--jp {
+  font-size: 2em;
+  font-weight: 500;
+  margin-left: -4px;
+}
+.main .ingredient__tomato .inner {
+  display: flex;
+}
+.main .ingredient__tomato--text {
+  line-height: 1.7em;
+  margin-top: 8px;
+}
+.main .ingredient__tomato--text--bold {
+  font-weight: bold;
+  margin-top: 8px;
+}
+.main .ingredient__tomato--text--small {
+  padding-right: 90px;
+}
+.main .ingredient__tomato--text--img {
+  margin-top: -50px;
+  margin-right: 40px;
+  margin-left: 0;
+  padding-left: 0;
+  width: 350px;
+}
+.main .ingredient__tomato--text--area {
+  padding: 16px;
+  line-height: 1.7em;
+  margin-top: -50px;
+}
+.main .ingredient__tomato--text--area .main {
+  background-image: url("img/マップピンのアイコン素材3.png");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: -3px 2px;
+}
+.main .ingredient__tomato--text--area .main p {
+  margin-left: 24px;
+}
+.main .ingredient__tomato--text--area .text {
+  margin-bottom: 8px;
+}
+.main .ingredient__tomato--text--area .text__large {
+  font-size: 1.1em;
+  line-height: 1.9em;
+}
+.main .ingredient__tomato--text--area .text__small {
+  font-size: 0.9em;
+}
+.main .ingredient__tomato--text--area .character {
+  margin-top: 8px;
+  border-top: 1px solid black;
+}
+.main .ingredient__tomato--text--area .character__text {
+  font-size: 1.1em;
+  margin-top: 8px;
+}
+.main .ingredient__tomato--text--area .character__note {
+  font-size: 0.9em;
+}
+.main .ingredient__tomato--text--area .character__note--detail {
+  background-image: url("img/チェックボックスのフリーアイコン.png");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 2px 6px;
+}
+.main .ingredient__tomato--text--area .character__note--detail p {
+  margin-left: 30px;
+}
+.main .meat {
+  margin-top: 96px;
+}
+.main .meat__hero img {
+  max-width: 100%;
+  aspect-ratio: 2.5/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .meat__hero {
+  background-color: rgb(247, 246, 245);
+  margin-bottom: -8px;
+}
+.main .meat .bg-gray {
+  background-color: rgb(247, 246, 245);
+}
+.main .meat__text {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.main .meat__text--eg {
+  margin-top: 8px;
+  padding-top: 16px;
+}
+.main .meat__text--jp {
+  margin-top: 8px;
+}
+.main .meat__title {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 24px;
+}
+.main .meat__title h2 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.main .meat__title p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+.main .meat__meat {
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 16px;
+}
+.main .meat__meat--name--jp {
+  font-size: 2em;
+  font-weight: 500;
+}
+.main .meat__meat .inner {
+  display: flex;
+}
+.main .meat__meat--text {
+  line-height: 1.7em;
+  margin-top: 8px;
+}
+.main .meat__meat--text--bold {
+  font-weight: bold;
+  margin-top: 8px;
+}
+.main .meat__meat--text--small {
+  padding-right: 100px;
+}
+.main .meat__meat--text--img {
+  margin-top: -50px;
+  margin-right: 40px;
+  margin-left: 0;
+  padding-left: 0;
+  width: 400px;
+}
+.main .meat__meat--text--area {
+  padding: 16px;
+  line-height: 1.7em;
+  margin-top: -50px;
+}
+.main .meat__meat--text--area .main {
+  background-image: url("img/ステーキアイコン4(1).png");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 2px 2px;
+}
+.main .meat__meat--text--area .main p {
+  margin-left: 40px;
+}
+.main .meat__meat--text--area .text {
+  margin-bottom: 8px;
+}
+.main .meat__meat--text--area .text__large {
+  font-size: 1.1em;
+  line-height: 1.9em;
+}
+.main .meat__meat--text--area .text__small {
+  font-size: 0.9em;
+}
+.main .meat__meat--text--area .character {
+  margin-top: 8px;
+  border-top: 1px solid black;
+}
+.main .meat__meat--text--area .character__text {
+  font-size: 1.1em;
+  margin-top: 8px;
+}
+.main .meat__meat--text--area .character__note {
+  font-size: 0.9em;
+}
+.main .meat__meat--text--area .character__note--detail {
+  background-image: url("img/チェックボックスのフリーアイコン.png");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 2px 6px;
+}
+.main .meat__meat--text--area .character__note--detail p {
+  margin-left: 30px;
+}
+.main .spice {
+  margin-top: 96px;
+  margin-bottom: 108px;
+}
+.main .spice__hero img {
+  max-width: 100%;
+  aspect-ratio: 2/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .spice__hero {
+  background-color: rgb(247, 246, 245);
+  margin-bottom: -8px;
+}
+.main .spice .bg-gray {
+  background-color: rgb(247, 246, 245);
+}
+.main .spice__text {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.main .spice__text--eg {
+  margin-top: 8px;
+  padding-top: 16px;
+}
+.main .spice__text--jp {
+  margin-top: 8px;
+}
+.main .spice__title {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 24px;
+}
+.main .spice__title h2 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.main .spice__title p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+.main .spice__spice {
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 16px;
+}
+.main .spice__spice--name--jp {
+  font-size: 2em;
+  font-weight: 500;
+}
+.main .spice__spice .inner {
+  display: flex;
+}
+.main .spice__spice--text {
+  line-height: 1.7em;
+  margin-top: 8px;
+}
+.main .spice__spice--text--bold {
+  font-weight: bold;
+  margin-top: 8px;
+}
+.main .spice__spice--text--small {
+  padding-right: 20px;
+}
+.main .spice__spice--text--img {
+  margin-top: -50px;
+  margin-right: 40px;
+  margin-left: 0;
+  padding-left: 0;
+  width: 400px;
+}
+.main .spice__spice--text--area {
+  padding: 16px;
+  line-height: 1.7em;
+  margin-top: -50px;
+}
+.main .spice__spice--text--area .main {
+  background-image: url("img/唐辛子のアイコン1.png");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: -3px 2px;
+}
+.main .spice__spice--text--area .main p {
+  margin-left: 24px;
+}
+.main .spice__spice--text--area .text {
+  margin-bottom: 8px;
+}
+.main .spice__spice--text--area .text__large {
+  font-size: 1.1em;
+  line-height: 1.9em;
+}
+.main .spice__spice--text--area .text__small {
+  font-size: 0.9em;
+}
+.main .spice__spice--text--area .character {
+  margin-top: 8px;
+  border-top: 1px solid black;
+}
+.main .spice__spice--text--area .character__text {
+  font-size: 1.1em;
+  margin-top: 8px;
+}
+.main .spice__spice--text--area .character__note {
+  font-size: 0.9em;
+}
+.main .spice__spice--text--area .character__note--detail {
+  background-image: url("img/チェックボックスのフリーアイコン.png");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 2px 6px;
+}
+.main .spice__spice--text--area .character__note--detail p {
+  margin-left: 30px;
+}
+.main .footer {
+  display: flex;
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+.main .footer__company img {
+  width: 300px;
+  aspect-ratio: 1/1;
+}
+.main .footer__company--detail .address span {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-right: 4px;
+}
+.main .footer__company--detail .address {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+.main .footer__company--detail .time span {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-right: 4px;
+}
+.main .footer__company--detail .time {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+.main .footer__company--detail .holiday span {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-right: 4px;
+}
+.main .footer__company--detail .holiday {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+.main .footer__nav {
+  margin-top: 50px;
+  margin-left: 150px;
+}
+.main .footer__nav--info {
+  margin-bottom: 24px;
+}
+.main .footer__nav--info p {
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+.main .footer__nav--info li {
+  margin-bottom: 4px;
+}
+.main .footer__nav--info li a {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.main .footer__nav--menu {
+  margin-bottom: 24px;
+}
+.main .footer__nav--menu p {
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+.main .footer__nav--menu li {
+  margin-bottom: 4px;
+}
+.main .footer__nav--menu li a {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.main .footer__nav--news {
+  margin-bottom: 24px;
+}
+.main .footer__nav--news li a {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.main .footer__nav--instagram {
+  margin-bottom: 24px;
+}
+.main .footer__nav--instagram li {
+  background-image: url("img/インスタグラムのシンプルなロゴのアイコン1.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+.main .footer__nav--instagram li a {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-left: 24px;
+}
+.main .footer__nav--contact {
+  margin-bottom: 24px;
+}
+.main .footer__nav--contact li {
+  background-image: url("../img/mail-icon.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+.main .footer__nav--contact li a {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-left: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    margin: 0 auto;
+  }
+  .hamburger {
+    display: block;
+    width: 72px;
+    aspect-ratio: 1;
+    border: none;
+    z-index: 10000;
+    position: absolute;
+    right: 10px;
+    margin: 8px;
+    padding: 8px;
+    background-color: whitesmoke;
+    opacity: 0.7;
+    border-radius: 10px;
+  }
+  .hamburger:hover {
+    background-color: rgb(190, 190, 190);
+  }
+  .hamburger span {
+    display: block;
+    width: 70%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #000;
+    position: absolute;
+    top: 40%;
+    transition: all 0.3s;
+    transform-origin: center;
+  }
+  .hamburger span:nth-child(1) {
+    transform: translateY(-13px);
+  }
+  .hamburger span:nth-child(2) {
+    transform: translateY(0px);
+  }
+  .hamburger span:nth-child(3) {
+    transform: translateY(13px);
+  }
+  .hamburger__text {
+    position: absolute;
+    top: 48px;
+    left: 12px;
+    font-weight: 500;
+  }
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  .aside {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #000;
+    padding-top: 80px;
+    transition: 0.3s;
+  }
+  .aside.active {
+    right: 0;
+  }
+  .main {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .main .section__title {
+    text-align: center;
+  }
+  .main .ingredient__onion {
+    margin-bottom: 108px;
+  }
+  .main .ingredient__onion .inner {
+    position: relative;
+    flex-direction: column;
+  }
+  .main .ingredient__onion--text {
+    margin-bottom: 96px;
+  }
+  .main .ingredient__onion img {
+    max-width: 49%;
+    aspect-ratio: 1/1;
+  }
+  .main .ingredient__onion--text--area {
+    position: absolute;
+    top: 51.5%;
+    left: 55%;
+    max-width: 49%;
+  }
+  .main .ingredient__tomato {
+    margin-bottom: 108px;
+  }
+  .main .ingredient__tomato .inner {
+    position: relative;
+    flex-direction: column;
+  }
+  .main .ingredient__tomato--text {
+    margin-bottom: 96px;
+  }
+  .main .ingredient__tomato img {
+    max-width: 49%;
+    aspect-ratio: 1/1;
+  }
+  .main .ingredient__tomato--text--area {
+    position: absolute;
+    top: 51.5%;
+    left: 55%;
+    max-width: 49%;
+  }
+  .main .meat__meat {
+    margin-bottom: 108px;
+  }
+  .main .meat__meat .inner {
+    position: relative;
+    flex-direction: column;
+  }
+  .main .meat__meat--text {
+    margin-bottom: 96px;
+  }
+  .main .meat__meat img {
+    max-width: 49%;
+    aspect-ratio: 1/1;
+  }
+  .main .meat__meat--text--area {
+    position: absolute;
+    top: 49.5%;
+    left: 55%;
+    max-width: 49%;
+  }
+  .main .spice__spice {
+    margin-bottom: 108px;
+  }
+  .main .spice__spice .inner {
+    position: relative;
+    flex-direction: column;
+  }
+  .main .spice__spice--text {
+    margin-bottom: 96px;
+  }
+  .main .spice__spice img {
+    max-width: 49%;
+    aspect-ratio: 1/1;
+  }
+  .main .spice__spice--text--area {
+    position: absolute;
+    top: 47.5%;
+    left: 55%;
+    max-width: 49%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer__company {
+    text-align: center;
+  }
+  .footer__nav ul {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body {
+  font-size: 100%;
+  display: flex;
+  padding-right: 40px;
+}
+
+.section__title {
+  margin-top: 96px;
+}
+.section__title--jp {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.section__title--eg {
+  font-size: 5em;
+  margin-bottom: 24px;
+  font-family: "Arizonia", cursive;
+}
+
+.aside {
+  width: 20%;
+}
+.aside__img a img {
+  width: 300px;
+  height: 200px;
+}
+.aside__nav {
+  margin-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.aside__nav--info {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.aside__nav--info p {
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.aside__nav--info p::before, .aside__nav--info p::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: black;
+}
+.aside__nav--info p::before {
+  top: 50%;
+  right: 5px;
+  transform: rotate(0deg);
+}
+.aside__nav--info p::after {
+  top: 50%;
+  right: 5px;
+  transform: rotate(90deg);
+}
+.aside__nav--info p.close::before {
+  transform: rotate(45deg);
+}
+.aside__nav--info p.close::after {
+  transform: rotate(-45deg);
+}
+.aside__nav--info li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+.aside__nav--info li a {
+  text-decoration: none;
+  font-size: 1.1em;
+}
+.aside__nav--menu {
+  border-bottom: 2px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.aside__nav--menu p {
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.aside__nav--menu p::before, .aside__nav--menu p::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: black;
+}
+.aside__nav--menu p::before {
+  top: 50%;
+  right: 5px;
+  transform: rotate(0deg);
+}
+.aside__nav--menu p::after {
+  top: 50%;
+  right: 5px;
+  transform: rotate(90deg);
+}
+.aside__nav--menu p.close::before {
+  transform: rotate(45deg);
+}
+.aside__nav--menu p.close::after {
+  transform: rotate(-45deg);
+}
+.aside__nav--menu li {
+  list-style: none;
+  margin-bottom: 16px;
+  display: none;
+}
+.aside__nav--menu li a {
+  text-decoration: none;
+  font-size: 1.1em;
+}
+.aside__nav--news {
+  border-bottom: 2px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.aside__nav--news li {
+  list-style: none;
+}
+.aside__nav--news li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+.aside__nav--instagram {
+  border-bottom: 2px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.aside__nav--instagram li {
+  list-style: none;
+  background-image: url("../img/インスタグラムのシンプルなロゴのアイコン1.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+.aside__nav--instagram li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-left: 30px;
+}
+.aside__nav--contact {
+  border-bottom: 2px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.aside__nav--contact li {
+  list-style: none;
+  background-image: url("../img/mail-icon.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+.aside__nav--contact li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-left: 30px;
+}
+
+.main {
+  width: 80%;
+}
+.main .top .hero {
+  position: relative;
+}
+.main .top .hero__visual {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.main .top .hero__visual img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .top .hero__img img {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+.main .top .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  padding: 0px 16px;
+  height: 100px;
+  overflow-y: hidden;
+}
+.main .top .container .slideshow img {
+  aspect-ratio: 1/1;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -60%;
+  left: 0%;
+  opacity: 0;
+  animation: anime 10s 0s infinite;
+}
+.main .top .container .slideshow img:nth-of-type(2) {
+  animation-delay: 2s;
+}
+.main .top .container .slideshow img:nth-of-type(3) {
+  animation-delay: 4s;
+}
+.main .top .container .slideshow img:nth-of-type(4) {
+  animation-delay: 6s;
+}
+.main .top .container .slideshow img:nth-of-type(5) {
+  animation-delay: 8s;
+}
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.main .top .container .slideshow2 img {
+  aspect-ratio: 1/1;
+  width: 150px;
+  position: absolute;
+  top: -60%;
+  left: 13%;
+  opacity: 0;
+  animation: anime 10s 0s infinite;
+}
+.main .top .container .slideshow2 img:nth-of-type(2) {
+  animation-delay: 2s;
+}
+.main .top .container .slideshow2 img:nth-of-type(3) {
+  animation-delay: 4s;
+}
+.main .top .container .slideshow2 img:nth-of-type(4) {
+  animation-delay: 6s;
+}
+.main .top .container .slideshow2 img:nth-of-type(5) {
+  animation-delay: 8s;
+}
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.main .top .container .slideshow3 img {
+  aspect-ratio: 1/1;
+  width: 150px;
+  position: absolute;
+  top: -60%;
+  left: 26%;
+  opacity: 0;
+  animation: anime 10s 0s infinite;
+}
+.main .top .container .slideshow3 img:nth-of-type(2) {
+  animation-delay: 2s;
+}
+.main .top .container .slideshow3 img:nth-of-type(3) {
+  animation-delay: 4s;
+}
+.main .top .container .slideshow3 img:nth-of-type(4) {
+  animation-delay: 6s;
+}
+.main .top .container .slideshow3 img:nth-of-type(5) {
+  animation-delay: 8s;
+}
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.main .top .container .slideshow4 img {
+  aspect-ratio: 1/1;
+  width: 150px;
+  position: absolute;
+  top: -60%;
+  left: 38%;
+  opacity: 0;
+  animation: anime 10s 0s infinite;
+}
+.main .top .container .slideshow4 img:nth-of-type(2) {
+  animation-delay: 2s;
+}
+.main .top .container .slideshow4 img:nth-of-type(3) {
+  animation-delay: 4s;
+}
+.main .top .container .slideshow4 img:nth-of-type(4) {
+  animation-delay: 6s;
+}
+.main .top .container .slideshow4 img:nth-of-type(5) {
+  animation-delay: 8s;
+}
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.main .top .container .slideshow5 img {
+  aspect-ratio: 1/1;
+  width: 150px;
+  position: absolute;
+  top: -60%;
+  left: 50%;
+  opacity: 0;
+  animation: anime 10s 0s infinite;
+}
+.main .top .container .slideshow5 img:nth-of-type(2) {
+  animation-delay: 2s;
+}
+.main .top .container .slideshow5 img:nth-of-type(3) {
+  animation-delay: 4s;
+}
+.main .top .container .slideshow5 img:nth-of-type(4) {
+  animation-delay: 6s;
+}
+.main .top .container .slideshow5 img:nth-of-type(5) {
+  animation-delay: 8s;
+}
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.main .top .container .slideshow6 img {
+  aspect-ratio: 1/1;
+  width: 150px;
+  position: absolute;
+  top: -60%;
+  left: 63%;
+  opacity: 0;
+  animation: anime 10s 0s infinite;
+}
+.main .top .container .slideshow6 img:nth-of-type(2) {
+  animation-delay: 2s;
+}
+.main .top .container .slideshow6 img:nth-of-type(3) {
+  animation-delay: 4s;
+}
+.main .top .container .slideshow6 img:nth-of-type(4) {
+  animation-delay: 6s;
+}
+.main .top .container .slideshow6 img:nth-of-type(5) {
+  animation-delay: 8s;
+}
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.main .top .container .slideshow7 img {
+  aspect-ratio: 1/1;
+  width: 150px;
+  position: absolute;
+  top: -60%;
+  left: 75%;
+  opacity: 0;
+  animation: anime 10s 0s infinite;
+}
+.main .top .container .slideshow7 img:nth-of-type(2) {
+  animation-delay: 2s;
+}
+.main .top .container .slideshow7 img:nth-of-type(3) {
+  animation-delay: 4s;
+}
+.main .top .container .slideshow7 img:nth-of-type(4) {
+  animation-delay: 6s;
+}
+.main .top .container .slideshow7 img:nth-of-type(5) {
+  animation-delay: 8s;
+}
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.main .top .container .slideshow8 img {
+  aspect-ratio: 1/1;
+  width: 150px;
+  position: absolute;
+  top: -60%;
+  left: 88%;
+  opacity: 0;
+  animation: anime 10s 0s infinite;
+}
+.main .top .container .slideshow8 img:nth-of-type(2) {
+  animation-delay: 2s;
+}
+.main .top .container .slideshow8 img:nth-of-type(3) {
+  animation-delay: 4s;
+}
+.main .top .container .slideshow8 img:nth-of-type(4) {
+  animation-delay: 6s;
+}
+.main .top .container .slideshow8 img:nth-of-type(5) {
+  animation-delay: 8s;
+}
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.main .slider {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 250px;
+  will-change: transform;
+}
+.main .slider img {
+  width: 150px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: scroll-left 10s infinite linear 0.5s both;
+  overflow: hidden;
+}
+.main .slider .margin {
+  margin-right: 180px;
+}
+.main .slider .down {
+  margin-top: 30px;
+}
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.main .concept {
+  background-image: url("../img/herocurry.png");
+  background-size: 650px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
+.main .concept__text p {
+  margin-bottom: 48px;
+  line-height: 1.7em;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.main .concept__btn a {
+  border: 1px solid black;
+  font-size: 1.3em;
+  padding: 16px 24px;
+  border-radius: 5px;
+}
+.main .concept__btn a img {
+  width: 20px;
+  margin-left: 16px;
+}
+.main .menu__content {
+  display: flex;
+  margin-bottom: 72px;
+}
+.main .menu__content .menu--right {
+  margin-left: 48px;
+  margin-top: auto;
+}
+.main .menu__content--img img {
+  width: 450px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .menu__content--title {
+  margin-bottom: 56px;
+  position: relative;
+}
+.main .menu__content--title h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.main .menu__content--title p {
+  font-weight: 900;
+  font-size: 8em;
+  position: absolute;
+  opacity: 0.5;
+  top: -200px;
+  left: -80px;
+  z-index: -100;
+}
+.main .menu__content--text {
+  line-height: 1.7em;
+  margin-bottom: 56px;
+}
+.main .menu__content--btn {
+  display: flex;
+  align-items: center;
+}
+.main .menu__content--btn button {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 16px 56px 16px 40px;
+}
+.main .menu__content--btn button img {
+  width: 20px;
+  position: absolute;
+  top: 33%;
+  right: 5%;
+}
+.main .menu__content:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.main .menu--right:nth-child(2) {
+  margin-right: 48px;
+}
+.main .menu__content:nth-child(odd) .menu--right .menu__content--title p {
+  left: 470px;
+}
+.main .news ul {
+  border-top: 1px solid black;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.main .news ul li {
+  border-bottom: 1px solid black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.main .news ul li .category {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+.main .news ul li .category span {
+  border: 1px solid black;
+  padding: 4px;
+}
+.main .news ul li .category p {
+  margin-left: 10px;
+}
+.main .news ul li .news__content {
+  position: relative;
+  margin-left: 16px;
+}
+.main .news ul li .news__content p {
+  font-size: 1.3em;
+}
+.main .news ul li .news__content .arrow-btn {
+  position: absolute;
+  top: -55%;
+  right: 1%;
+}
+.main .news ul li .news__content .arrow-btn img {
+  width: 20px;
+  margin-right: 20px;
+}
+.main .news ul li .news__content .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 9999;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.6);
+}
+.main .news ul li .news__content .modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+.main .news ul li .news__content .modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.main .news ul li .news__content .modal__content {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  margin: 100px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 999;
+  overflow-y: auto;
+}
+.main .news ul li .news__content .modal__content .category {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.main .news ul li .news__content .modal__content .category span {
+  border: 1px solid black;
+  padding: 4px;
+}
+.main .news ul li .news__content .modal__content .category p {
+  margin-left: 10px;
+  margin-top: 0;
+}
+.main .news ul li .news__content .modal h2 {
+  font-size: 1.4em;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.main .news ul li .news__content .modal img {
+  margin-bottom: 16px;
+}
+.main .news ul li .news__content .modal__text p {
+  font-size: 1em;
+}
+.main .news ul li .news__content .modal__text ul {
+  border: none;
+}
+.main .news ul li .news__content .modal__text ul li {
+  border: none;
+}
+.main .news ul li .news__content .modal__text ul li p {
+  font-size: 1.1em;
+}
+.main .news ul li .news__content .modal__text ul li span {
+  margin-left: 16px;
+  font-size: 1em;
+}
+.main .news ul li .news__content .modal__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 8px 24px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  border-radius: 10px;
+  position: absolute;
+  top: 100%;
+  right: 38%;
+}
+.main .news ul li .news__content .modal__close p {
+  font-size: 1em;
+  text-align: center;
+}
+.main .news ul li .news__content .modal__close img {
+  width: 20px;
+  margin-left: 16px;
+  margin-top: 20px;
+}
+.main .instagram {
+  background-image: url("../img/ホールスパイス2.png");
+  background-size: 650px;
+  background-repeat: no-repeat;
+  background-position: 120% -50%;
+}
+.main .instagram__left {
+  display: flex;
+}
+.main .instagram__left--image {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.main .instagram__left--image img {
+  aspect-ratio: 1/1;
+  width: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .instagram .instagram__left--btn {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-left: 100px;
+  height: 60px;
+  padding: 4px 24px;
+  border-radius: 5px;
+  background-image: url("../img/インスタグラムのシンプルなロゴのアイコン1.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 10% 55%;
+}
+.main .instagram .instagram__left--btn a {
+  font-size: 1.5em;
+  margin-left: 24px;
+}
+.main .instagram .instagram__left--btn a img {
+  width: 20px;
+  margin-left: 16px;
+}
+.main .contact .inner {
+  display: flex;
+}
+.main .contact__number dl {
+  margin-left: 16px;
+}
+.main .contact__number dl .contact__number--tel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.main .contact__number dl .contact__number--tel dt {
+  font-size: 1.4em;
+  margin-right: 16px;
+}
+.main .contact__number dl .contact__number--tel dd {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.main .contact__number dl .contact__number--open {
+  display: flex;
+  align-items: center;
+}
+.main .contact__number dl .contact__number--open dt {
+  font-size: 1.4em;
+  margin-right: 16px;
+}
+.main .contact__number dl .contact__number--open dd {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.main .contact__btn {
+  margin-left: 312px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 5px;
+  background-image: url("../img/mail-icon.png");
+  background-size: 36px;
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+}
+.main .contact__btn a {
+  font-size: 1.3em;
+  margin-left: 36px;
+}
+.main .contact__btn a img {
+  width: 20px;
+  margin-left: 16px;
+}
+.main .footer {
+  display: flex;
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+.main .footer__company img {
+  width: 300px;
+  aspect-ratio: 1/1;
+}
+.main .footer__company--detail .address span {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-right: 4px;
+}
+.main .footer__company--detail .address {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+.main .footer__company--detail .time span {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-right: 4px;
+}
+.main .footer__company--detail .time {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+.main .footer__company--detail .holiday span {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-right: 4px;
+}
+.main .footer__company--detail .holiday {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+.main .footer__nav {
+  margin-top: 50px;
+  margin-left: 150px;
+}
+.main .footer__nav--info {
+  margin-bottom: 24px;
+}
+.main .footer__nav--info p {
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+.main .footer__nav--info li {
+  margin-bottom: 4px;
+}
+.main .footer__nav--info li a {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.main .footer__nav--menu {
+  margin-bottom: 24px;
+}
+.main .footer__nav--menu p {
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+.main .footer__nav--menu li {
+  margin-bottom: 4px;
+}
+.main .footer__nav--menu li a {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.main .footer__nav--news {
+  margin-bottom: 24px;
+}
+.main .footer__nav--news li a {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.main .footer__nav--instagram {
+  margin-bottom: 24px;
+}
+.main .footer__nav--instagram li {
+  background-image: url("../img/インスタグラムのシンプルなロゴのアイコン1.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+.main .footer__nav--instagram li a {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-left: 24px;
+}
+.main .footer__nav--contact {
+  margin-bottom: 24px;
+}
+.main .footer__nav--contact li {
+  background-image: url("../img/mail-icon.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+.main .footer__nav--contact li a {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-left: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    margin: 0 auto;
+  }
+  .hamburger {
+    display: block;
+    width: 72px;
+    aspect-ratio: 1;
+    border: none;
+    z-index: 10000;
+    position: absolute;
+    right: 10px;
+    margin: 8px;
+    padding: 8px;
+    background-color: whitesmoke;
+    opacity: 0.7;
+    border-radius: 10px;
+  }
+  .hamburger:hover {
+    background-color: whitesmoke;
+  }
+  .hamburger span {
+    display: block;
+    width: 70%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #000;
+    position: absolute;
+    top: 40%;
+    transition: all 0.3s;
+    transform-origin: center;
+  }
+  .hamburger span:nth-child(1) {
+    transform: translateY(-13px);
+  }
+  .hamburger span:nth-child(2) {
+    transform: translateY(0px);
+  }
+  .hamburger span:nth-child(3) {
+    transform: translateY(13px);
+  }
+  .hamburger__text {
+    position: absolute;
+    top: 48px;
+    left: 12px;
+    font-weight: 500;
+  }
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  .aside {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+    transition: 0.3s;
+    background-color: #fff;
+    opacity: 0.7;
+  }
+  .aside.active {
+    right: 0;
+    z-index: 9999;
+    margin: 0 auto;
+  }
+  .aside.active .aside__img {
+    display: none;
+  }
+  .main {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .main .section__title {
+    text-align: center;
+  }
+  .main .hero {
+    position: relative;
+  }
+  .main .hero__visual {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .main .hero__visual img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main .hero__img img {
+    position: absolute;
+    top: 60%;
+    transform: translateX(-50%);
+    max-width: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+  }
+  .main .container .slideshow2 {
+    display: none;
+  }
+  .main .container .slideshow4 {
+    display: none;
+  }
+  .main .container .slideshow6 {
+    display: none;
+  }
+  .main .container .slideshow8 {
+    display: none;
+  }
+  .main .concept {
+    background-size: 350px;
+    background-position: 300px -20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: overlay;
+  }
+  .main .concept__text {
+    text-align: center;
+  }
+  .main .concept__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .menu__content {
+    flex-direction: column;
+  }
+  .main .menu__content--img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .main .menu__content--img img {
+    max-width: 100%;
+  }
+  .main .menu__content:nth-child(odd) {
+    flex-direction: column;
+  }
+  .main .menu .menu--right .menu__content--title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+  .main .menu .menu--right .menu__content--title h2 {
+    margin-right: 24px;
+  }
+  .main .menu .menu--right .menu__content--title p {
+    position: static;
+    font-size: 1.4em;
+  }
+  .main .menu .menu--right .menu__content--text p {
+    text-align: center;
+  }
+  .main .menu .menu__content--btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+  }
+  .main .instagram {
+    background: none;
+  }
+  .main .instagram__left {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .main .instagram__left--image {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+  }
+  .main .instagram__left .btn {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    margin-top: 50px;
+  }
+  .main .instagram__left .btn a {
+    position: relative;
+    top: 20%;
+    right: 1%;
+  }
+  .main .instagram__left .btn a img {
+    width: 20px;
+    position: absolute;
+    top: 30%;
+  }
+  .contact .inner {
+    flex-direction: column;
+  }
+  .contact .inner .contact__number {
+    display: flex;
+    margin: 0 auto;
+  }
+  .contact .inner .contact__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer__company {
+    text-align: center;
+  }
+  .footer__nav ul {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */

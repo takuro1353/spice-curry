@@ -1,0 +1,1130 @@
+body {
+    font-size: 100%;
+    display: flex;
+}
+
+.aside {
+    width: 20%;
+
+    &__img {
+        a {
+            img {
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
+
+    &__nav {
+        margin-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        &--info {
+            // margin-bottom: 40px;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            padding-top: 24px;
+            padding-bottom: 24px;
+
+            p {
+                font-weight: 500;
+                font-size: 1.3em;
+                margin-bottom: 8px;
+                position: relative;
+                transition: all .3s ease;
+
+                &::before,
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 15px;
+                    height: 2px;
+                    background-color: black;
+                }
+
+                &::before {
+                    top: 50%;
+                    right: 5px;
+                    transform: rotate(0deg);
+                }
+
+                &::after {
+                    top: 50%;
+                    right: 5px;
+                    transform: rotate(90deg);
+                }
+
+                &.close::before {
+                    transform: rotate(45deg);
+                }
+
+                &.close::after {
+                    transform: rotate(-45deg);
+                }
+            }
+
+            li {
+                list-style: none;
+                margin-bottom: 16px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 1.1em;
+                }
+            }
+        }
+
+        &--menu {
+            // margin-bottom: 40px;
+            border-bottom: 2px solid black;
+            padding-top: 24px;
+            padding-bottom: 24px;
+
+            p {
+                font-weight: 500;
+                font-size: 1.3em;
+                margin-bottom: 8px;
+                position: relative;
+                transition: all .3s ease;
+
+                &::before,
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 15px;
+                    height: 2px;
+                    background-color: black;
+                }
+
+                &::before {
+                    top: 50%;
+                    right: 5px;
+                    transform: rotate(0deg);
+                }
+
+                &::after {
+                    top: 50%;
+                    right: 5px;
+                    transform: rotate(90deg);
+                }
+
+                &.close::before {
+                    transform: rotate(45deg);
+                }
+
+                &.close::after {
+                    transform: rotate(-45deg);
+                }
+            }
+
+            li {
+                list-style: none;
+                margin-bottom: 16px;
+                display: none;
+
+                a {
+                    text-decoration: none;
+                    font-size: 1.1em;
+                }
+            }
+        }
+
+        &--news {
+            // margin-bottom: 40px;
+            border-bottom: 2px solid black;
+            padding-top: 24px;
+            padding-bottom: 24px;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 1.3em;
+                }
+            }
+        }
+
+        &--instagram {
+            // margin-bottom: 40px;
+            border-bottom: 2px solid black;
+            padding-top: 24px;
+            padding-bottom: 24px;
+
+            li {
+                list-style: none;
+                background-image: url("../img/インスタグラムのシンプルなロゴのアイコン1.png");
+                background-size: 24px;
+                background-repeat: no-repeat;
+                background-position: 0% 50%;
+
+                a {
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 1.3em;
+                    margin-left: 30px;
+                }
+            }
+        }
+
+        &--contact {
+            border-bottom: 2px solid black;
+            padding-top: 24px;
+            padding-bottom: 24px;
+
+            li {
+                list-style: none;
+                background-image: url("../img/mail-icon.png");
+                background-size: 24px;
+                background-repeat: no-repeat;
+                background-position: 0% 50%;
+
+                a {
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 1.3em;
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    flex: 1;
+    margin-top: 48px;
+    display: block;
+    margin: 0 auto;
+
+    .section__title {
+        &--jp {
+            font-size: 1.2em;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 48px;
+        }
+
+        &--eg {
+            text-align: center;
+            font-size: 5em;
+            margin-bottom: 24px;
+            font-family: "Arizonia", cursive;
+        }
+    }
+
+    .ingredient {
+        margin-top: 96px;
+
+        &__hero {
+            img {
+                max-width: 100%;
+                aspect-ratio: 2.5/1;
+                object-fit: cover;
+            }
+
+            background-color: rgb(247, 246, 245);
+            margin-bottom: -8px;
+        }
+
+        .bg-gray {
+            background-color: rgb(247, 246, 245);
+        }
+
+        &__text {
+            padding-left: 2%;
+            padding-right: 2%;
+
+            &--eg {
+                margin-top: 8px;
+                padding-top: 16px;
+            }
+
+            &--jp {
+                margin-top: 8px;
+            }
+        }
+
+        &__title {
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-bottom: 24px;
+
+            h2 {
+                font-size: 2em;
+                font-weight: 500;
+                margin-top: 24px;
+                margin-bottom: 24px;
+            }
+
+            p {
+                font-size: 1.1em;
+                line-height: 1.7em;
+            }
+        }
+
+        &__onion {
+            padding-left: 2%;
+            padding-right: 2%;
+            margin-top: 16px;
+
+            &--name {
+                &--eg {}
+
+                &--jp {
+                    font-size: 2em;
+                    font-weight: 500;
+                }
+            }
+
+            .inner {
+                display: flex;
+            }
+
+            &--text {
+                line-height: 1.7em;
+                margin-top: 8px;
+
+                &--bold {
+                    font-weight: bold;
+                    margin-top: 8px;
+                }
+
+                &--small {
+                    padding-right: 40px;
+                }
+
+                &--img {
+                    margin-top: -50px;
+                    margin-right: 40px;
+                    margin-left: 0;
+                    padding-left: 0;
+                    width: 350px;
+                }
+
+                &--area {
+                    padding: 16px;
+                    line-height: 1.7em;
+                    margin-top: -50px;
+
+                    .main {
+                        background-image: url("img/マップピンのアイコン素材3.png");
+                        background-repeat: no-repeat;
+                        background-size: 24px;
+                        background-position: -3px 2px;
+
+                        p {
+                            margin-left: 24px;
+                        }
+                    }
+
+                    .text {
+                        margin-bottom: 8px;
+
+                        &__large {
+                            font-size: 1.1em;
+                            line-height: 1.9em;
+                        }
+
+                        &__small {
+                            font-size: 0.9em;
+                        }
+                    }
+
+                    .character {
+                        margin-top: 8px;
+                        border-top: 1px solid black;
+
+                        &__text {
+                            font-size: 1.1em;
+                            margin-top: 8px;
+                        }
+
+                        &__note {
+                            font-size: 0.9em;
+
+                            &--detail {
+                                background-image: url("../img/チェックボックスのフリーアイコン.png");
+                                background-repeat: no-repeat;
+                                background-size: 20px;
+                                background-position: 2px 6px;
+
+                                p {
+                                    margin-left: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+
+
+
+
+
+        &__tomato {
+            border-top: 1px solid black;
+            padding-top: 8px;
+            padding-left: 2%;
+            padding-right: 2%;
+            margin-top: 16px;
+            margin-bottom: 108px;
+
+            &--name {
+                &--eg {}
+
+                &--jp {
+                    font-size: 2em;
+                    font-weight: 500;
+                    margin-left: -4px;
+                }
+            }
+
+            .inner {
+                display: flex;
+            }
+
+            &--text {
+                line-height: 1.7em;
+                margin-top: 8px;
+
+                &--bold {
+                    font-weight: bold;
+                    margin-top: 8px;
+                }
+
+                &--small {
+                    padding-right: 90px;
+                }
+
+                &--img {
+                    margin-top: -50px;
+                    margin-right: 40px;
+                    margin-left: 0;
+                    padding-left: 0;
+                    width: 350px;
+                }
+
+                &--area {
+                    padding: 16px;
+                    line-height: 1.7em;
+                    margin-top: -50px;
+
+                    .main {
+                        background-image: url("img/マップピンのアイコン素材3.png");
+                        background-repeat: no-repeat;
+                        background-size: 24px;
+                        background-position: -3px 2px;
+
+                        p {
+                            margin-left: 24px;
+                        }
+                    }
+
+                    .text {
+                        margin-bottom: 8px;
+
+                        &__large {
+                            font-size: 1.1em;
+                            line-height: 1.9em;
+                        }
+
+                        &__small {
+                            font-size: 0.9em;
+                        }
+                    }
+
+                    .character {
+                        margin-top: 8px;
+                        border-top: 1px solid black;
+
+                        &__text {
+                            font-size: 1.1em;
+                            margin-top: 8px;
+                        }
+
+                        &__note {
+                            font-size: 0.9em;
+
+                            &--detail {
+                                background-image: url("img/チェックボックスのフリーアイコン.png");
+                                background-repeat: no-repeat;
+                                background-size: 20px;
+                                background-position: 2px 6px;
+
+                                p {
+                                    margin-left: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+
+    .meat {
+        margin-top: 96px;
+
+        &__hero {
+            img {
+                max-width: 100%;
+                aspect-ratio: 2.5/1;
+                object-fit: cover;
+            }
+
+            background-color: rgb(247, 246, 245);
+            margin-bottom: -8px;
+        }
+
+        .bg-gray {
+            background-color: rgb(247, 246, 245);
+        }
+
+        &__text {
+            padding-left: 2%;
+            padding-right: 2%;
+
+            &--eg {
+                margin-top: 8px;
+                padding-top: 16px;
+            }
+
+            &--jp {
+                margin-top: 8px;
+            }
+        }
+
+        &__title {
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-bottom: 24px;
+
+            h2 {
+                font-size: 2em;
+                font-weight: 500;
+                margin-top: 24px;
+                margin-bottom: 24px;
+            }
+
+            p {
+                font-size: 1.1em;
+                line-height: 1.7em;
+            }
+        }
+
+        &__meat {
+            padding-left: 2%;
+            padding-right: 2%;
+            margin-top: 16px;
+
+            &--name {
+                &--eg {}
+
+                &--jp {
+                    font-size: 2em;
+                    font-weight: 500;
+                }
+            }
+
+            .inner {
+                display: flex;
+            }
+
+            &--text {
+                line-height: 1.7em;
+                margin-top: 8px;
+
+                &--bold {
+                    font-weight: bold;
+                    margin-top: 8px;
+                }
+
+                &--small {
+                    padding-right: 100px;
+                }
+
+                &--img {
+                    margin-top: -50px;
+                    margin-right: 40px;
+                    margin-left: 0;
+                    padding-left: 0;
+                    width: 400px;
+                }
+
+                &--area {
+                    padding: 16px;
+                    line-height: 1.7em;
+                    margin-top: -50px;
+
+                    .main {
+                        background-image: url("img/ステーキアイコン4(1).png");
+                        background-repeat: no-repeat;
+                        background-size: 24px;
+                        background-position: 2px 2px;
+
+                        p {
+                            margin-left: 40px;
+                        }
+                    }
+
+                    .text {
+                        margin-bottom: 8px;
+
+                        &__large {
+                            font-size: 1.1em;
+                            line-height: 1.9em;
+                        }
+
+                        &__small {
+                            font-size: 0.9em;
+                        }
+                    }
+
+                    .character {
+                        margin-top: 8px;
+                        border-top: 1px solid black;
+
+                        &__text {
+                            font-size: 1.1em;
+                            margin-top: 8px;
+                        }
+
+                        &__note {
+                            font-size: 0.9em;
+
+                            &--detail {
+                                background-image: url("img/チェックボックスのフリーアイコン.png");
+                                background-repeat: no-repeat;
+                                background-size: 20px;
+                                background-position: 2px 6px;
+
+                                p {
+                                    margin-left: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+
+
+    .spice {
+        margin-top: 96px;
+        margin-bottom: 108px;
+
+        &__hero {
+            img {
+                max-width: 100%;
+                aspect-ratio: 2/1;
+                object-fit: cover;
+            }
+
+            background-color: rgb(247, 246, 245);
+            margin-bottom: -8px;
+        }
+
+        .bg-gray {
+            background-color: rgb(247, 246, 245);
+        }
+
+        &__text {
+            padding-left: 2%;
+            padding-right: 2%;
+
+            &--eg {
+                margin-top: 8px;
+                padding-top: 16px;
+            }
+
+            &--jp {
+                margin-top: 8px;
+            }
+        }
+
+        &__title {
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-bottom: 24px;
+
+            h2 {
+                font-size: 2em;
+                font-weight: 500;
+                margin-top: 24px;
+                margin-bottom: 24px;
+            }
+
+            p {
+                font-size: 1.1em;
+                line-height: 1.7em;
+            }
+        }
+
+        &__spice {
+            padding-left: 2%;
+            padding-right: 2%;
+            margin-top: 16px;
+
+            &--name {
+                &--eg {}
+
+                &--jp {
+                    font-size: 2em;
+                    font-weight: 500;
+                }
+            }
+
+            .inner {
+                display: flex;
+            }
+
+            &--text {
+                line-height: 1.7em;
+                margin-top: 8px;
+
+                &--bold {
+                    font-weight: bold;
+                    margin-top: 8px;
+                }
+
+                &--small {
+                    padding-right: 20px;
+                }
+
+                &--img {
+                    margin-top: -50px;
+                    margin-right: 40px;
+                    margin-left: 0;
+                    padding-left: 0;
+                    width: 400px;
+                }
+
+                &--area {
+                    padding: 16px;
+                    line-height: 1.7em;
+                    margin-top: -50px;
+
+                    .main {
+                        background-image: url("img/唐辛子のアイコン1.png");
+                        background-repeat: no-repeat;
+                        background-size: 24px;
+                        background-position: -3px 2px;
+
+                        p {
+                            margin-left: 24px;
+                        }
+                    }
+
+                    .text {
+                        margin-bottom: 8px;
+
+                        &__large {
+                            font-size: 1.1em;
+                            line-height: 1.9em;
+                        }
+
+                        &__small {
+                            font-size: 0.9em;
+                        }
+                    }
+
+                    .character {
+                        margin-top: 8px;
+                        border-top: 1px solid black;
+
+                        &__text {
+                            font-size: 1.1em;
+                            margin-top: 8px;
+                        }
+
+                        &__note {
+                            font-size: 0.9em;
+
+                            &--detail {
+                                background-image: url("img/チェックボックスのフリーアイコン.png");
+                                background-repeat: no-repeat;
+                                background-size: 20px;
+                                background-position: 2px 6px;
+
+                                p {
+                                    margin-left: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+
+    .footer {
+        display: flex;
+        margin-top: 96px;
+        margin-bottom: 96px;
+
+        &__company {
+            img {
+                width: 300px;
+                aspect-ratio: 1/1;
+            }
+
+            &--detail {
+                .address {
+                    span {
+                        font-size: 1.3em;
+                        font-weight: 500;
+                        margin-right: 4px;
+                    }
+
+                    margin-bottom: 12px;
+                    font-size: 1.1em;
+                }
+
+                .time {
+                    span {
+                        font-size: 1.3em;
+                        font-weight: 500;
+                        margin-right: 4px;
+                    }
+
+                    margin-bottom: 12px;
+                    font-size: 1.1em;
+                }
+
+                .holiday {
+                    span {
+                        font-size: 1.3em;
+                        font-weight: 500;
+                        margin-right: 4px;
+                    }
+
+                    margin-bottom: 12px;
+                    font-size: 1.1em;
+                }
+            }
+        }
+
+        &__nav {
+            margin-top: 50px;
+            margin-left: 150px;
+
+            &--info {
+                margin-bottom: 24px;
+
+                p {
+                    font-weight: 500;
+                    font-size: 1.3em;
+                    margin-bottom: 8px;
+                }
+
+                li {
+                    margin-bottom: 4px;
+
+                    a {
+                        font-size: 1.1em;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            &--menu {
+                margin-bottom: 24px;
+
+                p {
+                    font-weight: 500;
+                    font-size: 1.3em;
+                    margin-bottom: 8px;
+                }
+
+                li {
+                    margin-bottom: 4px;
+
+                    a {
+                        font-size: 1.1em;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            &--news {
+                margin-bottom: 24px;
+
+                li {
+                    a {
+                        font-size: 1.1em;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            &--instagram {
+                margin-bottom: 24px;
+
+                li {
+                    background-image: url("img/インスタグラムのシンプルなロゴのアイコン1.png");
+                    background-size: 20px;
+                    background-repeat: no-repeat;
+                    background-position: 0% 50%;
+
+                    a {
+                        font-size: 1.1em;
+                        font-weight: 400;
+                        margin-left: 24px;
+                    }
+                }
+            }
+
+            &--contact {
+                margin-bottom: 24px;
+
+                li {
+                    background-image: url("../img/mail-icon.png");
+                    background-size: 20px;
+                    background-repeat: no-repeat;
+                    background-position: 0% 50%;
+
+                    a {
+                        font-size: 1.1em;
+                        font-weight: 400;
+                        margin-left: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-left: 1%;
+        padding-right: 1%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: block;
+        width: 72px;
+        aspect-ratio: 1;
+        border: none;
+        z-index: 10000;
+        position: absolute;
+        right: 10px;
+        margin: 8px;
+        padding: 8px;
+        background-color: whitesmoke;
+        opacity: 0.7;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: rgb(190, 190, 190);
+        }
+
+        span {
+            display: block;
+            width: 70%;
+            height: 3px;
+            border-radius: 5px;
+            background-color: #000;
+            position: absolute;
+            top: 40%;
+            transition: all .3s;
+            transform-origin: center;
+
+            &:nth-child(1) {
+                transform: translateY(-13px);
+            }
+
+            &:nth-child(2) {
+                transform: translateY(0px);
+            }
+
+            &:nth-child(3) {
+                transform: translateY(13px);
+            }
+        }
+
+        &__text {
+            position: absolute;
+            top: 48px;
+            left: 12px;
+            font-weight: 500;
+        }
+
+        &.active span:nth-child(1) {
+            transform: rotate(45deg);
+
+        }
+
+        &.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        &.active span:nth-child(3) {
+            transform: rotate(-45deg);
+
+        }
+    }
+
+
+    .aside {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #000;
+        padding-top: 80px;
+        transition: 0.3s;
+    }
+
+    .aside.active {
+        right: 0;
+    }
+
+
+
+    .main {
+        margin: 0 auto;
+        width: 100%;
+
+        .section__title {
+            text-align: center;
+        }
+
+        .ingredient__onion {
+            margin-bottom: 108px;
+
+            .inner {
+                position: relative;
+                flex-direction: column;
+            }
+
+            &--text {
+                margin-bottom: 96px;
+            }
+
+            img {
+                max-width: 49%;
+                aspect-ratio: 1/1;
+            }
+
+            &--text--area {
+                position: absolute;
+                top: 51.5%;
+                left: 55%;
+                max-width: 49%;
+            }
+        }
+
+        .ingredient__tomato {
+            margin-bottom: 108px;
+
+            .inner {
+                position: relative;
+                flex-direction: column;
+            }
+
+            &--text {
+                margin-bottom: 96px;
+            }
+
+            img {
+                max-width: 49%;
+                aspect-ratio: 1/1;
+            }
+
+            &--text--area {
+                position: absolute;
+                top: 51.5%;
+                left: 55%;
+                max-width: 49%;
+            }
+        }
+
+
+        .meat__meat {
+            margin-bottom: 108px;
+
+            .inner {
+                position: relative;
+                flex-direction: column;
+            }
+
+            &--text {
+                margin-bottom: 96px;
+            }
+
+            img {
+                max-width: 49%;
+                aspect-ratio: 1/1;
+            }
+
+            &--text--area {
+                position: absolute;
+                top: 49.5%;
+                left: 55%;
+                max-width: 49%;
+            }
+        }
+
+
+        .spice__spice {
+            margin-bottom: 108px;
+
+            .inner {
+                position: relative;
+                flex-direction: column;
+            }
+
+            &--text {
+                margin-bottom: 96px;
+            }
+
+            img {
+                max-width: 49%;
+                aspect-ratio: 1/1;
+            }
+
+            &--text--area {
+                position: absolute;
+                top: 47.5%;
+                left: 55%;
+                max-width: 49%;
+            }
+        }
+    }
+
+    .footer {
+        flex-direction: column;
+
+        &__company {
+            text-align: center;
+        }
+
+        &__nav {
+            ul {
+                margin: 0 auto;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
