@@ -800,11 +800,15 @@ body {
   }
   .main .ingredient__onion--text--area {
     position: absolute;
-    top: 51.5%;
-    left: 55%;
+    top: 57%;
+    left: 50%;
+    transform: translate(5%, 1%);
     max-width: 49%;
+    aspect-ratio: 1/1.15;
+    height: auto;
   }
   .main .ingredient__tomato {
+    padding-bottom: 72px;
     margin-bottom: 108px;
   }
   .main .ingredient__tomato .inner {
@@ -820,9 +824,12 @@ body {
   }
   .main .ingredient__tomato--text--area {
     position: absolute;
-    top: 51.5%;
-    left: 55%;
+    top: 57%;
+    left: 50%;
+    transform: translate(5%, 1%);
     max-width: 49%;
+    aspect-ratio: 1/1.15;
+    height: auto;
   }
   .main .meat__meat {
     margin-bottom: 108px;
@@ -840,9 +847,12 @@ body {
   }
   .main .meat__meat--text--area {
     position: absolute;
-    top: 49.5%;
-    left: 55%;
+    top: 57%;
+    left: 50%;
+    transform: translate(5%, 1%);
     max-width: 49%;
+    aspect-ratio: 1/1.15;
+    height: auto;
   }
   .main .spice__spice {
     margin-bottom: 108px;
@@ -860,9 +870,12 @@ body {
   }
   .main .spice__spice--text--area {
     position: absolute;
-    top: 47.5%;
-    left: 55%;
+    top: 55%;
+    left: 50%;
+    transform: translate(5%, 1%);
     max-width: 49%;
+    aspect-ratio: 1/1.15;
+    height: auto;
   }
   .footer {
     flex-direction: column;

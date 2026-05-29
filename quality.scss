@@ -527,7 +527,7 @@ body {
             margin-top: 16px;
 
             &--name {
-                &--eg {}
+                
 
                 &--jp {
                     font-size: 2em;
@@ -934,7 +934,7 @@ body {
         border-radius: 10px;
 
         &:hover {
-            background-color: rgb(190, 190, 190);
+            background-color: whitesmoke;
         }
 
         span {
@@ -1028,13 +1028,17 @@ body {
 
             &--text--area {
                 position: absolute;
-                top: 51.5%;
-                left: 55%;
+                top: 57%;
+                left: 50%;
+                transform: translate(5%,1%);
                 max-width: 49%;
+                aspect-ratio: 1/1.15;
+                height: auto;
             }
         }
 
         .ingredient__tomato {
+            padding-bottom: 72px;
             margin-bottom: 108px;
 
             .inner {
@@ -1053,9 +1057,13 @@ body {
 
             &--text--area {
                 position: absolute;
-                top: 51.5%;
-                left: 55%;
+                top: 57%;
+                left: 50%;
+                transform: translate(5%,1%);
                 max-width: 49%;
+                aspect-ratio: 1/1.15;
+                height: auto;
+                
             }
         }
 
@@ -1079,9 +1087,12 @@ body {
 
             &--text--area {
                 position: absolute;
-                top: 49.5%;
-                left: 55%;
+                top: 57%;
+                left: 50%;
+                transform: translate(5%,1%);
                 max-width: 49%;
+                aspect-ratio: 1/1.15;
+                height: auto;
             }
         }
 
@@ -1105,9 +1116,12 @@ body {
 
             &--text--area {
                 position: absolute;
-                top: 47.5%;
-                left: 55%;
+                top: 55%;
+                left: 50%;
+                transform: translate(5%,1%);
                 max-width: 49%;
+                aspect-ratio: 1/1.15;
+                height: auto;
             }
         }
     }
