@@ -1,17 +1,23 @@
 body {
     font-size: 100%;
     display: flex;
+    font-family: "Zen Old Mincho", serif;
+}
+
+header + main {
+    margin-top: 0;
 }
 
 .aside {
     width: 20%;
-
+    margin: 0;
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    font-weight: 700;
     &__img {
-        a {
-            img {
-                width: 300px;
-                height: 200px;
-            }
+        img{
+            max-width: 100%;
         }
     }
 
@@ -28,7 +34,6 @@ body {
             padding-bottom: 24px;
 
             p {
-                font-weight: 500;
                 font-size: 1.3em;
                 margin-bottom: 8px;
                 position: relative;
@@ -67,6 +72,7 @@ body {
             li {
                 list-style: none;
                 margin-bottom: 16px;
+                margin-top: 16px;
 
                 a {
                     text-decoration: none;
@@ -82,7 +88,6 @@ body {
             padding-bottom: 24px;
 
             p {
-                font-weight: 500;
                 font-size: 1.3em;
                 margin-bottom: 8px;
                 position: relative;
@@ -120,6 +125,7 @@ body {
 
             li {
                 list-style: none;
+                margin-top: 16px;
                 margin-bottom: 16px;
                 display: none;
 
@@ -141,7 +147,6 @@ body {
 
                 a {
                     text-decoration: none;
-                    font-weight: 500;
                     font-size: 1.3em;
                 }
             }
@@ -162,7 +167,6 @@ body {
 
                 a {
                     text-decoration: none;
-                    font-weight: 500;
                     font-size: 1.3em;
                     margin-left: 30px;
                 }
@@ -183,7 +187,6 @@ body {
 
                 a {
                     text-decoration: none;
-                    font-weight: 500;
                     font-size: 1.3em;
                     margin-left: 30px;
                 }
@@ -194,6 +197,7 @@ body {
 
 .main {
     flex: 1;
+    margin-left: 20%;
 
     .hero {
         height: 500px;
@@ -241,13 +245,13 @@ body {
         .catchcopy {
             margin-top: 400px;
             text-align: center;
-            font-size: 1.6em;
-            font-weight: 600;
+            font-size: 2em;
+            font-weight: 700;
         }
 
         p {
             margin-top: 36px;
-            font-size: 1.1em;
+            font-size: 1.2em;
             text-align: center;
             line-height: 1.7em;
         }
@@ -262,8 +266,8 @@ body {
             h2 {
                 margin-top: 96px;
                 text-align: center;
-                font-size: 1.6em;
-                font-weight: 600;
+                font-size: 2em;
+                font-weight: 700;
             }
 
             img {
@@ -279,7 +283,7 @@ body {
 
             &__text {
                 margin-top: 48px;
-                font-size: 1.1em;
+                font-size: 1.2em;
                 margin-right: auto;
 
                 p {
@@ -307,8 +311,8 @@ body {
             h2 {
                 margin-top: 96px;
                 margin-right: auto;
-                font-size: 1.6em;
-                font-weight: 600;
+                font-size: 2em;
+                font-weight: 700;
                 line-height: 2em;
             }
 
@@ -336,7 +340,7 @@ body {
 
                 p {
                     margin-top: 36px;
-                    font-size: 1.1em;
+                    font-size: 1.2em;
                     line-height: 1.7em;
                 }
             }
@@ -350,13 +354,13 @@ body {
         .catchcopy {
             margin-top: 96px;
             text-align: center;
-            font-size: 1.6em;
-            font-weight: 600;
+            font-size: 2em;
+            font-weight: 700;
         }
 
         p {
             margin-top: 36px;
-            font-size: 1.1em;
+            font-size: 1.2em;
             text-align: center;
             line-height: 1.7em;
         }
@@ -425,7 +429,7 @@ body {
                 margin-bottom: 24px;
 
                 p {
-                    font-weight: 500;
+                    font-weight: 700;
                     font-size: 1.3em;
                     margin-bottom: 8px;
                 }
@@ -444,7 +448,7 @@ body {
                 margin-bottom: 24px;
 
                 p {
-                    font-weight: 500;
+                    font-weight: 700;
                     font-size: 1.3em;
                     margin-bottom: 8px;
                 }
@@ -464,8 +468,8 @@ body {
 
                 li {
                     a {
-                        font-size: 1.1em;
-                        font-weight: 400;
+                        font-size: 1.3em;
+                        font-weight: 700;
                     }
                 }
             }
@@ -480,8 +484,8 @@ body {
                     background-position: 0% 50%;
 
                     a {
-                        font-size: 1.1em;
-                        font-weight: 400;
+                        font-size: 1.3em;
+                        font-weight: 700;
                         margin-left: 24px;
                     }
                 }
@@ -497,8 +501,8 @@ body {
                     background-position: 0% 50%;
 
                     a {
-                        font-size: 1.1em;
-                        font-weight: 400;
+                        font-size: 1.3em;
+                        font-weight: 700;
                         margin-left: 24px;
                     }
                 }
@@ -628,8 +632,6 @@ body {
 
             &__img {
                 position: relative;
-
-                img {}
             }
         }
 
@@ -676,6 +678,7 @@ body {
 
                     p {
                         text-align: center;
+                        margin-left: 16px;
                     }
                 }
             }

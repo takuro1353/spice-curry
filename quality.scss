@@ -1,17 +1,23 @@
 body {
     font-size: 100%;
     display: flex;
+    font-family: "Zen Old Mincho", serif;
+}
+
+header + main {
+    margin-top: 0;
 }
 
 .aside {
     width: 20%;
-
+    margin: 0;
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    font-weight: 700;
     &__img {
-        a {
-            img {
-                width: 300px;
-                height: 200px;
-            }
+        img{
+            max-width: 100%;
         }
     }
 
@@ -28,7 +34,6 @@ body {
             padding-bottom: 24px;
 
             p {
-                font-weight: 500;
                 font-size: 1.3em;
                 margin-bottom: 8px;
                 position: relative;
@@ -67,6 +72,7 @@ body {
             li {
                 list-style: none;
                 margin-bottom: 16px;
+                margin-top: 16px;
 
                 a {
                     text-decoration: none;
@@ -82,7 +88,6 @@ body {
             padding-bottom: 24px;
 
             p {
-                font-weight: 500;
                 font-size: 1.3em;
                 margin-bottom: 8px;
                 position: relative;
@@ -120,6 +125,7 @@ body {
 
             li {
                 list-style: none;
+                margin-top: 16px;
                 margin-bottom: 16px;
                 display: none;
 
@@ -141,7 +147,6 @@ body {
 
                 a {
                     text-decoration: none;
-                    font-weight: 500;
                     font-size: 1.3em;
                 }
             }
@@ -162,7 +167,6 @@ body {
 
                 a {
                     text-decoration: none;
-                    font-weight: 500;
                     font-size: 1.3em;
                     margin-left: 30px;
                 }
@@ -183,7 +187,6 @@ body {
 
                 a {
                     text-decoration: none;
-                    font-weight: 500;
                     font-size: 1.3em;
                     margin-left: 30px;
                 }
@@ -192,18 +195,18 @@ body {
     }
 }
 
-.main {
+    .main {
     flex: 1;
-    margin-top: 48px;
-    display: block;
-    margin: 0 auto;
+    margin-left: 20%;
 
     .section__title {
+        margin-top: 48px;
         &--jp {
             font-size: 1.2em;
             font-weight: 500;
             text-align: center;
-            margin-top: 48px;
+            margin-top: 0;
+            margin-bottom: 8px;
         }
 
         &--eg {
@@ -253,7 +256,7 @@ body {
 
             h2 {
                 font-size: 2em;
-                font-weight: 500;
+                font-weight: 700;
                 margin-top: 24px;
                 margin-bottom: 24px;
             }
@@ -270,11 +273,10 @@ body {
             margin-top: 16px;
 
             &--name {
-                &--eg {}
 
                 &--jp {
                     font-size: 2em;
-                    font-weight: 500;
+                    font-weight: 700;
                 }
             }
 
@@ -289,6 +291,7 @@ body {
                 &--bold {
                     font-weight: bold;
                     margin-top: 8px;
+                    font-size: 1.1em;
                 }
 
                 &--small {
@@ -376,11 +379,10 @@ body {
             margin-bottom: 108px;
 
             &--name {
-                &--eg {}
 
                 &--jp {
                     font-size: 2em;
-                    font-weight: 500;
+                    font-weight: 700;
                     margin-left: -4px;
                 }
             }
@@ -396,6 +398,7 @@ body {
                 &--bold {
                     font-weight: bold;
                     margin-top: 8px;
+                    font-size: 1.1em;
                 }
 
                 &--small {
@@ -510,7 +513,7 @@ body {
 
             h2 {
                 font-size: 2em;
-                font-weight: 500;
+                font-weight: 700;
                 margin-top: 24px;
                 margin-bottom: 24px;
             }
@@ -531,7 +534,7 @@ body {
 
                 &--jp {
                     font-size: 2em;
-                    font-weight: 500;
+                    font-weight: 700;
                 }
             }
 
@@ -546,6 +549,7 @@ body {
                 &--bold {
                     font-weight: bold;
                     margin-top: 8px;
+                    font-size: 1.1em;
                 }
 
                 &--small {
@@ -662,7 +666,7 @@ body {
 
             h2 {
                 font-size: 2em;
-                font-weight: 500;
+                font-weight: 700;
                 margin-top: 24px;
                 margin-bottom: 24px;
             }
@@ -683,7 +687,7 @@ body {
 
                 &--jp {
                     font-size: 2em;
-                    font-weight: 500;
+                    font-weight: 700;
                 }
             }
 
@@ -698,6 +702,7 @@ body {
                 &--bold {
                     font-weight: bold;
                     margin-top: 8px;
+                    font-size: 1.1em;
                 }
 
                 &--small {
@@ -828,7 +833,7 @@ body {
                 margin-bottom: 24px;
 
                 p {
-                    font-weight: 500;
+                    font-weight: 700;
                     font-size: 1.3em;
                     margin-bottom: 8px;
                 }
@@ -847,7 +852,7 @@ body {
                 margin-bottom: 24px;
 
                 p {
-                    font-weight: 500;
+                    font-weight: 700;
                     font-size: 1.3em;
                     margin-bottom: 8px;
                 }
@@ -867,8 +872,8 @@ body {
 
                 li {
                     a {
-                        font-size: 1.1em;
-                        font-weight: 400;
+                        font-size: 1.3em;
+                        font-weight: 700;
                     }
                 }
             }
@@ -883,8 +888,8 @@ body {
                     background-position: 0% 50%;
 
                     a {
-                        font-size: 1.1em;
-                        font-weight: 400;
+                        font-size: 1.3em;
+                        font-weight: 700;
                         margin-left: 24px;
                     }
                 }
@@ -900,8 +905,8 @@ body {
                     background-position: 0% 50%;
 
                     a {
-                        font-size: 1.1em;
-                        font-weight: 400;
+                        font-size: 1.3em;
+                        font-weight: 700;
                         margin-left: 24px;
                     }
                 }

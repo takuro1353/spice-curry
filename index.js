@@ -29,6 +29,28 @@
 
 
 
+$('.slider').slick({
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 1500, 
+  speeds: 500,
+  infinite: true,
+  pauseOnHover: false,
+  pauseOnFocus: false,
+  cssEase: 'linear',
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
 //burger
 const hamburger = document.querySelector('#hamburger');
 const aside = document.querySelector('#aside');

@@ -2,14 +2,23 @@
 body {
   font-size: 100%;
   display: flex;
+  font-family: "Zen Old Mincho", serif;
+}
+
+header + main {
+  margin-top: 0;
 }
 
 .aside {
   width: 20%;
+  margin: 0;
+  top: 0;
+  position: fixed;
+  height: 100vh;
+  font-weight: 700;
 }
-.aside__img a img {
-  width: 300px;
-  height: 200px;
+.aside__img img {
+  max-width: 100%;
 }
 .aside__nav {
   margin-top: 40px;
@@ -23,7 +32,6 @@ body {
   padding-bottom: 24px;
 }
 .aside__nav--info p {
-  font-weight: 500;
   font-size: 1.3em;
   margin-bottom: 8px;
   position: relative;
@@ -55,6 +63,7 @@ body {
 .aside__nav--info li {
   list-style: none;
   margin-bottom: 16px;
+  margin-top: 16px;
 }
 .aside__nav--info li a {
   text-decoration: none;
@@ -66,7 +75,6 @@ body {
   padding-bottom: 24px;
 }
 .aside__nav--menu p {
-  font-weight: 500;
   font-size: 1.3em;
   margin-bottom: 8px;
   position: relative;
@@ -97,6 +105,7 @@ body {
 }
 .aside__nav--menu li {
   list-style: none;
+  margin-top: 16px;
   margin-bottom: 16px;
   display: none;
 }
@@ -114,7 +123,6 @@ body {
 }
 .aside__nav--news li a {
   text-decoration: none;
-  font-weight: 500;
   font-size: 1.3em;
 }
 .aside__nav--instagram {
@@ -131,7 +139,6 @@ body {
 }
 .aside__nav--instagram li a {
   text-decoration: none;
-  font-weight: 500;
   font-size: 1.3em;
   margin-left: 30px;
 }
@@ -149,22 +156,23 @@ body {
 }
 .aside__nav--contact li a {
   text-decoration: none;
-  font-weight: 500;
   font-size: 1.3em;
   margin-left: 30px;
 }
 
 .main {
   flex: 1;
+  margin-left: 20%;
+}
+.main .section__title {
   margin-top: 48px;
-  display: block;
-  margin: 0 auto;
 }
 .main .section__title--jp {
   font-size: 1.2em;
   font-weight: 500;
   text-align: center;
-  margin-top: 48px;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 .main .section__title--eg {
   text-align: center;
@@ -206,7 +214,7 @@ body {
 }
 .main .ingredient__title h2 {
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -221,7 +229,7 @@ body {
 }
 .main .ingredient__onion--name--jp {
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 700;
 }
 .main .ingredient__onion .inner {
   display: flex;
@@ -233,6 +241,7 @@ body {
 .main .ingredient__onion--text--bold {
   font-weight: bold;
   margin-top: 8px;
+  font-size: 1.1em;
 }
 .main .ingredient__onion--text--small {
   padding-right: 40px;
@@ -298,7 +307,7 @@ body {
 }
 .main .ingredient__tomato--name--jp {
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 700;
   margin-left: -4px;
 }
 .main .ingredient__tomato .inner {
@@ -311,6 +320,7 @@ body {
 .main .ingredient__tomato--text--bold {
   font-weight: bold;
   margin-top: 8px;
+  font-size: 1.1em;
 }
 .main .ingredient__tomato--text--small {
   padding-right: 90px;
@@ -400,7 +410,7 @@ body {
 }
 .main .meat__title h2 {
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -415,7 +425,7 @@ body {
 }
 .main .meat__meat--name--jp {
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 700;
 }
 .main .meat__meat .inner {
   display: flex;
@@ -427,6 +437,7 @@ body {
 .main .meat__meat--text--bold {
   font-weight: bold;
   margin-top: 8px;
+  font-size: 1.1em;
 }
 .main .meat__meat--text--small {
   padding-right: 100px;
@@ -517,7 +528,7 @@ body {
 }
 .main .spice__title h2 {
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -532,7 +543,7 @@ body {
 }
 .main .spice__spice--name--jp {
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 700;
 }
 .main .spice__spice .inner {
   display: flex;
@@ -544,6 +555,7 @@ body {
 .main .spice__spice--text--bold {
   font-weight: bold;
   margin-top: 8px;
+  font-size: 1.1em;
 }
 .main .spice__spice--text--small {
   padding-right: 20px;
@@ -643,7 +655,7 @@ body {
   margin-bottom: 24px;
 }
 .main .footer__nav--info p {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.3em;
   margin-bottom: 8px;
 }
@@ -658,7 +670,7 @@ body {
   margin-bottom: 24px;
 }
 .main .footer__nav--menu p {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.3em;
   margin-bottom: 8px;
 }
@@ -673,8 +685,8 @@ body {
   margin-bottom: 24px;
 }
 .main .footer__nav--news li a {
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 700;
 }
 .main .footer__nav--instagram {
   margin-bottom: 24px;
@@ -686,8 +698,8 @@ body {
   background-position: 0% 50%;
 }
 .main .footer__nav--instagram li a {
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 700;
   margin-left: 24px;
 }
 .main .footer__nav--contact {
@@ -700,8 +712,8 @@ body {
   background-position: 0% 50%;
 }
 .main .footer__nav--contact li a {
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 700;
   margin-left: 24px;
 }
 
@@ -727,7 +739,7 @@ body {
     border-radius: 10px;
   }
   .hamburger:hover {
-    background-color: rgb(190, 190, 190);
+    background-color: whitesmoke;
   }
   .hamburger span {
     display: block;

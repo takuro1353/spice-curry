@@ -2,14 +2,23 @@
 body {
   font-size: 100%;
   display: flex;
+  font-family: "Zen Old Mincho", serif;
+}
+
+header + main {
+  margin-top: 0;
 }
 
 .aside {
   width: 20%;
+  margin: 0;
+  top: 0;
+  position: fixed;
+  height: 100vh;
+  font-weight: 700;
 }
-.aside__img a img {
-  width: 300px;
-  height: 200px;
+.aside__img img {
+  max-width: 100%;
 }
 .aside__nav {
   margin-top: 40px;
@@ -23,7 +32,6 @@ body {
   padding-bottom: 24px;
 }
 .aside__nav--info p {
-  font-weight: 500;
   font-size: 1.3em;
   margin-bottom: 8px;
   position: relative;
@@ -55,6 +63,7 @@ body {
 .aside__nav--info li {
   list-style: none;
   margin-bottom: 16px;
+  margin-top: 16px;
 }
 .aside__nav--info li a {
   text-decoration: none;
@@ -66,8 +75,7 @@ body {
   padding-bottom: 24px;
 }
 .aside__nav--menu p {
-  font-weight: 500;
-  font-size: 1.3em;
+  font-size: 1.6em;
   margin-bottom: 8px;
   position: relative;
   transition: all 0.3s ease;
@@ -97,6 +105,7 @@ body {
 }
 .aside__nav--menu li {
   list-style: none;
+  margin-top: 16px;
   margin-bottom: 16px;
   display: none;
 }
@@ -114,7 +123,6 @@ body {
 }
 .aside__nav--news li a {
   text-decoration: none;
-  font-weight: 500;
   font-size: 1.3em;
 }
 .aside__nav--instagram {
@@ -131,7 +139,6 @@ body {
 }
 .aside__nav--instagram li a {
   text-decoration: none;
-  font-weight: 500;
   font-size: 1.3em;
   margin-left: 30px;
 }
@@ -149,30 +156,32 @@ body {
 }
 .aside__nav--contact li a {
   text-decoration: none;
-  font-weight: 500;
   font-size: 1.3em;
   margin-left: 30px;
 }
 
 .main {
   flex: 1;
+  margin-left: 20%;
+  font-weight: 600;
+}
+.main .section__title {
   margin-top: 48px;
-  display: block;
-  margin: 0 auto;
-  padding-left: 4%;
-  padding-right: 4%;
 }
 .main .section__title--jp {
   font-size: 1.2em;
   font-weight: 500;
   text-align: center;
-  margin-top: 48px;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 .main .section__title--eg {
   text-align: center;
   font-size: 5em;
+  margin-top: 0;
   margin-bottom: 24px;
   font-family: "Arizonia", cursive;
+  font-weight: 400;
 }
 .main .menu__hero img {
   max-width: 100%;
@@ -185,7 +194,7 @@ body {
   margin: 56px 16px;
 }
 .main .menu__top--text p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.5em;
 }
 .main .menu__select {
@@ -204,12 +213,21 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
+  font-size: 1.1em;
+  font-weight: 700;
 }
 .main .menu__select--btn img {
   width: 20px;
   position: absolute;
   top: 60%;
   left: 40%;
+  transition: transform 0.3s ease;
+}
+.main .menu__select--btn:hover {
+  border: 3px solid black;
+}
+.main .menu__select--btn:hover img {
+  transform: translateY(12px);
 }
 .main .menu__article--img {
   margin-top: 196px;
@@ -223,8 +241,8 @@ body {
      object-fit: cover;
 }
 .main .menu__article h3 {
-  font-size: 1.5em;
-  font-weight: 500;
+  font-size: 1.7em;
+  font-weight: 700;
   margin-bottom: 48px;
 }
 .main .menu__article--note {
@@ -240,7 +258,7 @@ body {
 .main .menu__article--note--left p {
   font-size: 1.3em;
   line-height: 1.6em;
-  font-weight: 500;
+  font-weight: 600;
 }
 .main .menu__article--note--right {
   width: 35%;
@@ -253,8 +271,8 @@ body {
   gap: 56px;
 }
 .main .menu__article--example--01 h3 {
-  font-size: 1.1em;
-  font-weight: 500;
+  font-size: 1.3em;
+  font-weight: 600;
   margin-bottom: 12px;
 }
 .main .menu__article--example--01 img {
@@ -271,8 +289,8 @@ body {
   line-height: 1.6em;
 }
 .main .menu__article--example--02 h3 {
-  font-size: 1.1em;
-  font-weight: 500;
+  font-size: 1.3em;
+  font-weight: 600;
   margin-bottom: 12px;
 }
 .main .menu__article--example--02 img {
@@ -332,7 +350,7 @@ body {
   margin-bottom: 24px;
 }
 .main .footer__nav--info p {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.3em;
   margin-bottom: 8px;
 }
@@ -347,7 +365,7 @@ body {
   margin-bottom: 24px;
 }
 .main .footer__nav--menu p {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.3em;
   margin-bottom: 8px;
 }
@@ -362,8 +380,8 @@ body {
   margin-bottom: 24px;
 }
 .main .footer__nav--news li a {
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 700;
 }
 .main .footer__nav--instagram {
   margin-bottom: 24px;
@@ -375,8 +393,8 @@ body {
   background-position: 0% 50%;
 }
 .main .footer__nav--instagram li a {
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 700;
   margin-left: 24px;
 }
 .main .footer__nav--contact {
@@ -389,8 +407,8 @@ body {
   background-position: 0% 50%;
 }
 .main .footer__nav--contact li a {
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 700;
   margin-left: 24px;
 }
 

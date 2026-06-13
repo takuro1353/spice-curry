@@ -3,10 +3,15 @@ body {
   font-size: 100%;
   display: flex;
   padding-right: 40px;
+  font-family: "Zen Old Mincho", serif;
+}
+
+header + main {
+  margin-top: 0;
 }
 
 .section__title {
-  margin-top: 96px;
+  margin-top: 48px;
 }
 .section__title--jp {
   font-size: 1.2em;
@@ -22,10 +27,14 @@ body {
 
 .aside {
   width: 20%;
+  margin: 0;
+  top: 0;
+  position: fixed;
+  height: 100vh;
+  font-weight: 700;
 }
-.aside__img a img {
-  width: 300px;
-  height: 200px;
+.aside__img img {
+  max-width: 100%;
 }
 .aside__nav {
   margin-top: 40px;
@@ -39,7 +48,6 @@ body {
   padding-bottom: 24px;
 }
 .aside__nav--info p {
-  font-weight: 500;
   font-size: 1.3em;
   margin-bottom: 8px;
   position: relative;
@@ -71,6 +79,7 @@ body {
 .aside__nav--info li {
   list-style: none;
   margin-bottom: 16px;
+  margin-top: 16px;
 }
 .aside__nav--info li a {
   text-decoration: none;
@@ -82,7 +91,6 @@ body {
   padding-bottom: 24px;
 }
 .aside__nav--menu p {
-  font-weight: 500;
   font-size: 1.3em;
   margin-bottom: 8px;
   position: relative;
@@ -113,6 +121,7 @@ body {
 }
 .aside__nav--menu li {
   list-style: none;
+  margin-top: 16px;
   margin-bottom: 16px;
   display: none;
 }
@@ -130,7 +139,6 @@ body {
 }
 .aside__nav--news li a {
   text-decoration: none;
-  font-weight: 500;
   font-size: 1.3em;
 }
 .aside__nav--instagram {
@@ -147,7 +155,6 @@ body {
 }
 .aside__nav--instagram li a {
   text-decoration: none;
-  font-weight: 500;
   font-size: 1.3em;
   margin-left: 30px;
 }
@@ -158,20 +165,20 @@ body {
 }
 .aside__nav--contact li {
   list-style: none;
-  background-image: url(".../img/mail-icon.png");
+  background-image: url("img/mail-icon.png");
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: 0% 50%;
 }
 .aside__nav--contact li a {
   text-decoration: none;
-  font-weight: 500;
   font-size: 1.3em;
   margin-left: 30px;
 }
 
 .main {
-  width: 80%;
+  flex: 1;
+  margin-left: 20%;
 }
 .main .hero__visual {
   width: 100%;
@@ -179,10 +186,12 @@ body {
   overflow: hidden;
 }
 .main .hero__visual img {
-  width: 100%;
+  width: 90%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: 0 auto;
+  display: block;
 }
 .main .hero__img img {
   top: 60%;
@@ -330,14 +339,16 @@ body {
   border: 1px solid #000;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 .main .contact__btn button img {
   width: 20px;
 }
 .main .contact__btn button:hover {
-  background-color: #000;
-  color: #fff;
+  border: 3px solid black;
+}
+.main .contact__btn button:hover img {
+  transform: translate(16px);
 }
 .main .footer {
   display: flex;
@@ -383,7 +394,7 @@ body {
   margin-bottom: 24px;
 }
 .main .footer__nav--info p {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.3em;
   margin-bottom: 8px;
 }
@@ -398,7 +409,7 @@ body {
   margin-bottom: 24px;
 }
 .main .footer__nav--menu p {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.3em;
   margin-bottom: 8px;
 }
@@ -413,8 +424,8 @@ body {
   margin-bottom: 24px;
 }
 .main .footer__nav--news li a {
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 700;
 }
 .main .footer__nav--instagram {
   margin-bottom: 24px;
@@ -426,22 +437,22 @@ body {
   background-position: 0% 50%;
 }
 .main .footer__nav--instagram li a {
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 700;
   margin-left: 24px;
 }
 .main .footer__nav--contact {
   margin-bottom: 24px;
 }
 .main .footer__nav--contact li {
-  background-image: url("img/メールの無料アイコンその8(1).png");
+  background-image: url("img/mail-icon.png");
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: 0% 50%;
 }
 .main .footer__nav--contact li a {
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 700;
   margin-left: 24px;
 }
 

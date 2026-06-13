@@ -7,10 +7,12 @@ body {
 
 .aside {
   width: 20%;
+  margin: 0;
 }
 .aside__img a img {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .aside__nav {
   margin-top: 40px;
@@ -115,7 +117,7 @@ body {
 }
 .aside__nav--news li a {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.3em;
 }
 .aside__nav--instagram {

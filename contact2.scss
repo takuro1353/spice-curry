@@ -7,12 +7,14 @@ body {
 
 .aside {
     width: 20%;
+    margin: 0;
 
     &__img {
         a {
             img {
-                width: 300px;
-                height: 200px;
+                width: 100%;
+                height: auto;
+                display: block;
             }
         }
     }
@@ -143,7 +145,7 @@ body {
 
                 a {
                     text-decoration: none;
-                    font-weight: 500;
+                    font-weight: 700;
                     font-size: 1.3em;
                 }
             }

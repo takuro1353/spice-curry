@@ -1,36 +1,47 @@
-@use "menu";
-@use "quality";
+
 
 body {
     font-size: 100%;
     display: flex;
-    padding-right: 40px;
+    font-family: "Zen Old Mincho", serif;
+}
+
+header + main {
+    margin-top: 0;
 }
 
 .section__title {
-    margin-top: 96px;
-
+    margin-top: 196px;
+    margin-left: 40px;
+    position: relative;
     &--jp {
-        font-size: 1.2em;
-        font-weight: 500;
+        font-size: 2.7em;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.25);
+        z-index: -10;
+        position: absolute;
+            top: -15%;
+            left: -3%;
     }
 
     &--eg {
-        font-size: 5em;
-        margin-bottom: 24px;
+        font-size: 6em;
+        margin-bottom: 40px;
         font-family: "Arizonia", cursive;
+        font-weight: 400;
     }
 }
 
 .aside {
     width: 20%;
-
+    margin: 0;
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    font-weight: 700;
     &__img {
-        a {
-            img {
-                width: 300px;
-                height: 200px;
-            }
+        img{
+            max-width: 100%;
         }
     }
 
@@ -47,7 +58,6 @@ body {
             padding-bottom: 24px;
 
             p {
-                font-weight: 500;
                 font-size: 1.3em;
                 margin-bottom: 8px;
                 position: relative;
@@ -86,6 +96,7 @@ body {
             li {
                 list-style: none;
                 margin-bottom: 16px;
+                margin-top: 16px;
 
                 a {
                     text-decoration: none;
@@ -101,7 +112,6 @@ body {
             padding-bottom: 24px;
 
             p {
-                font-weight: 500;
                 font-size: 1.3em;
                 margin-bottom: 8px;
                 position: relative;
@@ -139,6 +149,7 @@ body {
 
             li {
                 list-style: none;
+                margin-top: 16px;
                 margin-bottom: 16px;
                 display: none;
 
@@ -160,7 +171,6 @@ body {
 
                 a {
                     text-decoration: none;
-                    font-weight: 500;
                     font-size: 1.3em;
                 }
             }
@@ -181,7 +191,6 @@ body {
 
                 a {
                     text-decoration: none;
-                    font-weight: 500;
                     font-size: 1.3em;
                     margin-left: 30px;
                 }
@@ -202,7 +211,6 @@ body {
 
                 a {
                     text-decoration: none;
-                    font-weight: 500;
                     font-size: 1.3em;
                     margin-left: 30px;
                 }
@@ -212,12 +220,14 @@ body {
 }
 
 .main {
-    width: 80%;
-
+    flex: 1;
+    margin-left: 20%;
+    font-weight: 600;
+    font-size: 1.1em;
     .top {
         .hero {
             position: relative;
-
+            max-width: 100%;
             &__visual {
                 width: 100%;
                 height: 100vh;
@@ -249,10 +259,7 @@ body {
             justify-content: space-around;
             align-items: center;
             position: relative;
-            padding: 36px 16px;
-            margin-top: 24px;
-            margin-bottom: 24px;
-            height: 80px;
+            height: 120px;
             overflow: hidden;
 
             .slideshow {
@@ -262,7 +269,7 @@ body {
                     width: 150px;
                     height: 150px;
                     position: absolute;
-                    top: -60%;
+                    top: -15%;
                     left: 0%;
                     opacity: 0;
                     animation: anime 10s 0s infinite;
@@ -315,7 +322,7 @@ body {
                     aspect-ratio: 1/1;
                     width: 150px;
                     position: absolute;
-                    top: -60%;
+                    top: -15%;
                     left: 13%;
                     opacity: 0;
                     animation: anime 10s 0s infinite;
@@ -368,7 +375,7 @@ body {
                     aspect-ratio: 1/1;
                     width: 150px;
                     position: absolute;
-                    top: -60%;
+                    top: -15%;
                     left: 26%;
                     opacity: 0;
                     animation: anime 10s 0s infinite;
@@ -421,7 +428,7 @@ body {
                     aspect-ratio: 1/1;
                     width: 150px;
                     position: absolute;
-                    top: -60%;
+                    top: -15%;
                     left: 38%;
                     opacity: 0;
                     animation: anime 10s 0s infinite;
@@ -474,7 +481,7 @@ body {
                     aspect-ratio: 1/1;
                     width: 150px;
                     position: absolute;
-                    top: -60%;
+                    top: -15%;
                     left: 50%;
                     opacity: 0;
                     animation: anime 10s 0s infinite;
@@ -527,7 +534,7 @@ body {
                     aspect-ratio: 1/1;
                     width: 150px;
                     position: absolute;
-                    top: -60%;
+                    top: -15%;
                     left: 63%;
                     opacity: 0;
                     animation: anime 10s 0s infinite;
@@ -580,7 +587,7 @@ body {
                     aspect-ratio: 1/1;
                     width: 150px;
                     position: absolute;
-                    top: -60%;
+                    top: -15%;
                     left: 75%;
                     opacity: 0;
                     animation: anime 10s 0s infinite;
@@ -633,7 +640,7 @@ body {
                     aspect-ratio: 1/1;
                     width: 150px;
                     position: absolute;
-                    top: -60%;
+                    top: -15%;
                     left: 88%;
                     opacity: 0;
                     animation: anime 10s 0s infinite;
@@ -682,37 +689,19 @@ body {
     }
 
     .slider {
-        display: flex;
-        justify-content: space-between;
-        // width: 100%;
-        overflow: hidden;
-        height: 250px;
-        will-change: transform;
-
-        img {
-            width: 150px;
-            height: 200px;
-            object-fit: cover;
-            animation: scroll-left 10s infinite linear .5s both;
-            overflow: hidden;
-        }
-
-        .margin {
-            margin-right: 180px;
-        }
-
-        .down {
-            margin-top: 30px;
-        }
-
-        @keyframes scroll-left {
-            from {
-                transform: translateX(0);
+        margin-top: 30px;
+        li {
+            margin: 16px 16px;
+            img {
+                width: 90%;
+                height: 350px;
+                object-fit: cover;
+                border-radius: 20px;
             }
+        }
 
-            to {
-                transform: translateX(-100%);
-            }
+        slick-slide{
+            margin: 0 10px;
         }
     }
 
@@ -727,7 +716,7 @@ body {
                 margin-bottom: 48px;
                 line-height: 1.7em;
                 font-size: 1.1em;
-                font-weight: 400;
+                font-weight: 700;
             }
         }
 
@@ -738,10 +727,18 @@ body {
                 font-size: 1.3em;
                 padding: 16px 24px;
                 border-radius: 5px;
-
+                display: inline-block;
+                align-items: center;
                 img {
                     width: 20px;
                     margin-left: 16px;
+                    transition: transform .3s ease;
+                }
+                &:hover{
+                        border: 3px solid black;
+                    img{
+                        transform: translateX(16px);
+                    }
                 }
             }
 
@@ -751,18 +748,26 @@ body {
     .menu {
         &__content {
             display: flex;
-            margin-bottom: 72px;
+            gap: 48px;
+            align-items: flex-start;
+            margin-bottom: 96px;
 
             .menu--right {
                 margin-left: 48px;
                 margin-top: auto;
+                flex: 1;
             }
 
             &--img {
+                flex: 1;
+
                 img {
-                    width: 450px;
+                    width: 100%;
+                    max-width: 450px;
                     aspect-ratio: 1/1;
                     object-fit: cover;
+                    border-radius: 20px;
+                    box-shadow: 0 24px 60px rgba(0,0,0,0.12);
                 }
             }
 
@@ -771,8 +776,8 @@ body {
                 position: relative;
 
                 h2 {
-                    font-size: 1.5em;
-                    font-weight: 500;
+                    font-size: 1.7em;
+                    font-weight: 700;
                 }
 
                 p {
@@ -780,8 +785,8 @@ body {
                     font-size: 8em;
                     position: absolute;
                     opacity: 0.5;
-                    top: -150px;
-                    left: -40px;
+                    top: -50%;
+                    right: 103%;
                     z-index: -100;
                 }
             }
@@ -796,20 +801,32 @@ body {
                 display: flex;
                 align-items: center;
 
-                button {
-                    position: relative;
+                .btn-link {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 12px;
                     border: 1px solid black;
                     border-radius: 5px;
-                    padding: 16px 56px 16px 40px;
+                    padding: 16px 24px;
+                    transition: all 0.25s ease;
+                    background: rgba(255,255,255,0.98);
+                }
 
-                    img {
-                        width: 20px;
-                        position: absolute;
-                        top: 33%;
-                        right: 5%;
-                    }
+                .btn-link img {
+                    width: 20px;
+                    transition: transform 0.3s ease;
+                }
+
+                .btn-link:hover {
+                    border-color: #b64d1b;
+                    transform: translateX(2px);
+                }
+
+                .btn-link:hover img {
+                    transform: translateX(8px);
                 }
             }
+}
         }
     }
 
@@ -825,7 +842,7 @@ body {
         .menu--right {
             .menu__content--title {
                 p {
-                    left: 420px;
+                    left: 90%;
                 }
             }
         }
@@ -833,17 +850,33 @@ body {
 
     .news {
         ul {
-            border-top: 1px solid black;
+            border-top: 1px solid rgba(0,0,0,0.12);
             margin-top: 16px;
             margin-bottom: 16px;
+            padding: 0;
 
             li {
-                border-bottom: 1px solid black;
-                padding-top: 24px;
-                padding-bottom: 24px;
+                border-bottom: 1px solid rgba(0,0,0,0.12);
+                padding: 24px 0;
 
                 .category {
                     display: flex;
+                    align-items: center;
+                    margin-bottom: 16px;
+                    margin-left: 16px;
+
+                    span {
+                        border: 1px solid black;
+                        padding: 6px 10px;
+                        border-radius: 4px;
+                        font-size: 0.95em;
+                    }
+
+                    p {
+                        margin-left: 10px;
+                        font-size: 0.95em;
+                    }
+                }
                     align-items: center;
                     margin-bottom: 16px;
                     margin-left: 16px;
@@ -862,14 +895,21 @@ body {
                     position: relative;
                     margin-left: 16px;
 
+                    &:hover {
+                            .arrow-btn {
+                                transform: translate(24px, -50%);
+                            }
+                        }
                     p {
                         font-size: 1.3em;
                     }
 
                     .arrow-btn {
                         position: absolute;
-                        top: -55%;
-                        right: 1%;
+                        top: 0%;
+                        right: 20px;
+                        transform: translateY(-50%);
+                        transition: transform 0.3s ease;
 
                         img {
                             width: 20px;
@@ -962,8 +1002,6 @@ body {
                                     }
                                 }
                             }
-
-                            p {}
                         }
 
                         &__close {
@@ -993,17 +1031,19 @@ body {
                     }
                 }
             }
-        }
     }
 
     .instagram {
         background-image: url("img/ホールスパイス2.png");
         background-size: 650px;
         background-repeat: no-repeat;
-        background-position: 120% -50%;
+        background-position: 110% 70%;
+        padding: 48px 0;
 
         &__left {
             display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
 
             &--image {
                 display: grid;
@@ -1020,25 +1060,35 @@ body {
 
         .instagram__left--btn {
             border: 1px solid black;
-            display: flex;
+            display: inline-flex;
             align-items: center;
-            margin-top: auto;
-            margin-left: 100px;
+            bottom: 0;
             height: 60px;
             padding: 4px 24px;
             border-radius: 5px;
             background-image: url("img/インスタグラムのシンプルなロゴのアイコン1.png");
             background-size: 24px;
             background-repeat: no-repeat;
-            background-position: 10% 55%;
+            background-position: 10% 50%;
+            transition: transform .3s ease;
+            gap: 16px;
+            padding-left: 60px;
+            margin-top: auto;
 
             a {
                 font-size: 1.5em;
-                margin-left: 24px;
+                margin-left: 8px;
 
                 img {
                     width: 20px;
                     margin-left: 16px;
+                }
+            }
+
+            &:hover{
+                border: 3px solid black;
+                img{
+                    transform: translate(16px);
                 }
             }
         }
@@ -1047,6 +1097,8 @@ body {
     .contact {
         .inner {
             display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
         }
 
         &__number {
@@ -1087,16 +1139,18 @@ body {
         }
 
         &__btn {
-            margin-left: 312px;
+            margin-left: auto;
+            margin-right: auto;
             border: 1px solid black;
-            display: flex;
+            display: inline-flex;
             align-items: center;
-            padding: 12px 24px;
+            padding: 12px 24px 12px 60px;
             border-radius: 5px;
             background-image: url("img/mail-icon.png");
             background-size: 36px;
             background-repeat: no-repeat;
-            background-position: 5% 50%;
+            background-position: 10% 50%;
+            transition: transform .3s ease;
 
             a {
                 font-size: 1.3em;
@@ -1105,6 +1159,13 @@ body {
                 img {
                     width: 20px;
                     margin-left: 16px;
+                }
+            }
+
+            &:hover{
+                border: 3px solid black;
+                img{
+                    transform: translate(16px);
                 }
             }
         }
@@ -1165,7 +1226,7 @@ body {
                 margin-bottom: 24px;
 
                 p {
-                    font-weight: 500;
+                    font-weight: 700;
                     font-size: 1.3em;
                     margin-bottom: 8px;
                 }
@@ -1184,7 +1245,7 @@ body {
                 margin-bottom: 24px;
 
                 p {
-                    font-weight: 500;
+                    font-weight: 700;
                     font-size: 1.3em;
                     margin-bottom: 8px;
                 }
@@ -1204,8 +1265,8 @@ body {
 
                 li {
                     a {
-                        font-size: 1.1em;
-                        font-weight: 400;
+                        font-size: 1.3em;
+                        font-weight: 700;
                     }
                 }
             }
@@ -1220,8 +1281,8 @@ body {
                     background-position: 0% 50%;
 
                     a {
-                        font-size: 1.1em;
-                        font-weight: 400;
+                        font-size: 1.3em;
+                        font-weight: 700;
                         margin-left: 24px;
                     }
                 }
@@ -1237,15 +1298,16 @@ body {
                     background-position: 0% 50%;
 
                     a {
-                        font-size: 1.1em;
-                        font-weight: 400;
+                        font-size: 1.3em;
+                        font-weight: 700;
                         margin-left: 24px;
                     }
                 }
             }
         }
     }
-}
+    
+
 
 
 
@@ -1328,10 +1390,11 @@ body {
         right: -100%;
         width: 100%;
         height: 100vh;
-        padding-top: 80px;
+        padding: 100px 28px 28px;
         transition: 0.3s;
         background-color: #fff;
-        opacity: 0.7;
+        opacity: 1;
+        box-shadow: -4px 0 30px rgba(0,0,0,0.12);
     }
 
     .aside.active {
@@ -1342,6 +1405,10 @@ body {
         .aside__img {
             display: none;
         }
+    }
+
+    .main {
+        padding-top: 100px;
     }
 
     .main {
@@ -1418,6 +1485,7 @@ body {
         .menu {
             &__content {
                 flex-direction: column;
+                gap: 28px;
 
                 &--img {
                     max-width: 100%;
@@ -1475,6 +1543,7 @@ body {
                 display: flex;
                 margin: 0 auto;
                 flex-direction: column;
+                gap: 24px;
 
                 &--image {
                     grid-template-columns: repeat(2, 1fr);
@@ -1509,6 +1578,7 @@ body {
     .contact {
         .inner {
             flex-direction: column;
+            gap: 32px;
 
             .contact__number {
                 display: flex;
@@ -1534,7 +1604,6 @@ body {
 
         &__nav {
             ul {
-                margin: 0 auto;
                 justify-content: center;
                 align-items: center;
             }

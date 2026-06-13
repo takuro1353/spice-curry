@@ -2,14 +2,23 @@
 body {
   font-size: 100%;
   display: flex;
+  font-family: "Zen Old Mincho", serif;
+}
+
+header + main {
+  margin-top: 0;
 }
 
 .aside {
   width: 20%;
+  margin: 0;
+  top: 0;
+  position: fixed;
+  height: 100vh;
+  font-weight: 700;
 }
-.aside__img a img {
-  width: 300px;
-  height: 200px;
+.aside__img img {
+  max-width: 100%;
 }
 .aside__nav {
   margin-top: 40px;
@@ -23,7 +32,6 @@ body {
   padding-bottom: 24px;
 }
 .aside__nav--info p {
-  font-weight: 500;
   font-size: 1.3em;
   margin-bottom: 8px;
   position: relative;
@@ -55,6 +63,7 @@ body {
 .aside__nav--info li {
   list-style: none;
   margin-bottom: 16px;
+  margin-top: 16px;
 }
 .aside__nav--info li a {
   text-decoration: none;
@@ -66,7 +75,6 @@ body {
   padding-bottom: 24px;
 }
 .aside__nav--menu p {
-  font-weight: 500;
   font-size: 1.3em;
   margin-bottom: 8px;
   position: relative;
@@ -97,6 +105,7 @@ body {
 }
 .aside__nav--menu li {
   list-style: none;
+  margin-top: 16px;
   margin-bottom: 16px;
   display: none;
 }
@@ -114,7 +123,6 @@ body {
 }
 .aside__nav--news li a {
   text-decoration: none;
-  font-weight: 500;
   font-size: 1.3em;
 }
 .aside__nav--instagram {
@@ -131,7 +139,6 @@ body {
 }
 .aside__nav--instagram li a {
   text-decoration: none;
-  font-weight: 500;
   font-size: 1.3em;
   margin-left: 30px;
 }
@@ -149,13 +156,13 @@ body {
 }
 .aside__nav--contact li a {
   text-decoration: none;
-  font-weight: 500;
   font-size: 1.3em;
   margin-left: 30px;
 }
 
 .main {
   flex: 1;
+  margin-left: 20%;
 }
 .main .hero {
   height: 500px;
@@ -196,12 +203,12 @@ body {
 .main .text01 .catchcopy {
   margin-top: 400px;
   text-align: center;
-  font-size: 1.6em;
-  font-weight: 600;
+  font-size: 2em;
+  font-weight: 700;
 }
 .main .text01 p {
   margin-top: 36px;
-  font-size: 1.1em;
+  font-size: 1.2em;
   text-align: center;
   line-height: 1.7em;
 }
@@ -214,8 +221,8 @@ body {
 .main .text02 .catchcopy h2 {
   margin-top: 96px;
   text-align: center;
-  font-size: 1.6em;
-  font-weight: 600;
+  font-size: 2em;
+  font-weight: 700;
 }
 .main .text02 .catchcopy img {
   width: 600px;
@@ -228,7 +235,7 @@ body {
 }
 .main .text02 .note__text {
   margin-top: 48px;
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-right: auto;
 }
 .main .text02 .note__text p {
@@ -250,8 +257,8 @@ body {
 .main .text03 .catchcopy h2 {
   margin-top: 96px;
   margin-right: auto;
-  font-size: 1.6em;
-  font-weight: 600;
+  font-size: 2em;
+  font-weight: 700;
   line-height: 2em;
 }
 .main .text03 .catchcopy img {
@@ -276,7 +283,7 @@ body {
 }
 .main .text03 .note__text p {
   margin-top: 36px;
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.7em;
 }
 .main .text04 {
@@ -285,12 +292,12 @@ body {
 .main .text04 .catchcopy {
   margin-top: 96px;
   text-align: center;
-  font-size: 1.6em;
-  font-weight: 600;
+  font-size: 2em;
+  font-weight: 700;
 }
 .main .text04 p {
   margin-top: 36px;
-  font-size: 1.1em;
+  font-size: 1.2em;
   text-align: center;
   line-height: 1.7em;
 }
@@ -345,7 +352,7 @@ body {
   margin-bottom: 24px;
 }
 .main .footer__nav--info p {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.3em;
   margin-bottom: 8px;
 }
@@ -360,7 +367,7 @@ body {
   margin-bottom: 24px;
 }
 .main .footer__nav--menu p {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.3em;
   margin-bottom: 8px;
 }
@@ -375,8 +382,8 @@ body {
   margin-bottom: 24px;
 }
 .main .footer__nav--news li a {
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 700;
 }
 .main .footer__nav--instagram {
   margin-bottom: 24px;
@@ -388,8 +395,8 @@ body {
   background-position: 0% 50%;
 }
 .main .footer__nav--instagram li a {
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 700;
   margin-left: 24px;
 }
 .main .footer__nav--contact {
@@ -402,8 +409,8 @@ body {
   background-position: 0% 50%;
 }
 .main .footer__nav--contact li a {
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 700;
   margin-left: 24px;
 }
 
@@ -533,6 +540,7 @@ body {
   }
   .main .text03 .catchcopy h2 p {
     text-align: center;
+    margin-left: 16px;
   }
   .main .text03 .note img {
     margin-left: 0;
