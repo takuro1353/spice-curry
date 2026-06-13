@@ -1185,27 +1185,10 @@ header + main {
   .main .section__title {
     text-align: center;
   }
-  .main .hero {
-    position: relative;
-  }
-  .main .hero__visual {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-  .main .hero__visual img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .main .hero__img img {
-    position: absolute;
-    top: 60%;
-    transform: translateX(-50%);
-    max-width: 80%;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
+  .main .fade-text.vertical {
+    right: 30%;
+    top: 50%;
+    text-align: center;
   }
   .main .container .slideshow2 {
     display: none;
