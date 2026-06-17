@@ -29,27 +29,29 @@
 
 
 
-$('.slider').slick({
-  arrows: false,
-  autoplay: true,
-  autoplaySpeed: 1500, 
-  speeds: 500,
-  infinite: true,
-  pauseOnHover: false,
-  pauseOnFocus: false,
-  cssEase: 'linear',
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
+if (typeof $ !== 'undefined' && $('.slider').length > 0) {
+  $('.slider').slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    speeds: 500,
+    infinite: true,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    cssEase: 'linear',
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
       }
-    }
-  ]
-});
+    ]
+  });
+}
 
 //burger
 const hamburger = document.querySelector('#hamburger');
@@ -71,6 +73,13 @@ openBtns.forEach(btn => {
     const id = btn.dataset.modal;
     const modal = document.querySelector(`.modal[data-modal="${id}"]`);
     modal.classList.add('active');
+  });
+});
+
+document.querySelectorAll('.news__content > p').forEach(p => {
+  p.addEventListener('click', () => {
+    const id = p.closest('.news__content').querySelector('.openModal').dataset.modal;
+    document.querySelector(`.modal[data-modal="${id}"]`).classList.add('active');
   });
 });
 
